@@ -1,0 +1,1214 @@
+<!DOCTYPE html>
+<html lang="de-CH">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" type="image/png" href="data:image/png;base64,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">
+<title>Lernlandschaft · Kopfrechentraining</title>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+<style>
+
+  :root{
+    /* ===== Farbkonzept =====
+       Tiefes Marineblau  #005F6A : Titel, Navigation, primaere Buttons
+       Frisches Minzgruen #3EB489 : Erfolg, aktive Status, Hover
+       Helles Graublau    #EFF4F4 : Inhaltskarten
+       Dunkles Schiefergrau #2E4A4C : Fliesstext                       */
+    --brand:#005F6A;
+    --brand-2:#0A7C8A;
+    --mint:#3EB489;
+    --mint-ink:#1E7454;
+    --mint-soft:#E3F5EC;
+    --mint-line:#A8DFC6;
+    --paper:#E2ECEC;
+    --card:#EFF4F4;
+    --card-2:#FFFFFF;
+    --paper-deep:#D8E5E5;
+    --grid:#D2E1E1;
+    --ink:#2E4A4C;
+    --ink-soft:#43676A;
+    --line:#C6D8D8;
+    --line-2:#AAC4C4;
+    --red:#C0392B;
+    --red-soft:#FBECEA;
+    --red-line:#F0C4BE;
+    --amber:#B0781B;
+    --amber-soft:#FCF3DC;
+    accent-color:#005F6A;
+    /* Logo als eingebettete Datenquelle - keine externe Datei noetig */
+    --logo:url("data:image/png;base64,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");
+    --grid-strong:#BCD2D2;
+    --blue:#005F6A;
+    --blue-deep:#005F6A;
+    --green:#1E7454;
+    --shadow:0 1px 2px rgba(10,46,48,.05),0 8px 24px rgba(10,46,48,.07);
+    --radius:14px;
+    --serif:"Iowan Old Style","Palatino Linotype",Palatino,Georgia,"Times New Roman",serif;
+    --sans:system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    --mono:"DejaVu Sans Mono",ui-monospace,"SFMono-Regular",Menlo,Consolas,"Courier New",monospace;
+  }
+  *{box-sizing:border-box}
+  html,body{margin:0;padding:0}
+  body{
+    font-family:var(--sans);
+    color:var(--ink);
+    background-color:var(--paper);
+    background-image:
+      linear-gradient(var(--grid) 1px,transparent 1px),
+      linear-gradient(90deg,var(--grid) 1px,transparent 1px);
+    background-size:24px 24px;
+    -webkit-font-smoothing:antialiased;
+    line-height:1.5;
+  }
+  a{color:var(--brand)}
+  .app{display:flex;min-height:100vh}
+
+  /* ---------- Sidebar ---------- */
+  .sidebar{
+    width:264px;flex:0 0 264px;
+    background:var(--card);
+    backdrop-filter:blur(6px);
+    border-right:1px solid var(--line);
+    padding:22px 16px;
+    position:sticky;top:0;height:100vh;overflow:auto;
+  }
+  .brand{display:flex;gap:12px;align-items:flex-start;padding:4px 8px 18px}
+  .brand .mark{width:42px;height:42px;flex:0 0 42px;border-radius:10px}
+  /* ===== Logo-Kachel ===== */
+  .mark,.brand .mark,.mobilebar .mm{
+    background-color:#fff;background-image:var(--logo);
+    background-size:74%;background-position:center;background-repeat:no-repeat;
+    border:1px solid var(--line);box-shadow:none;color:transparent;font-size:0;
+  }
+
+  .brand h1{font-family:var(--serif);font-size:19px;margin:0;line-height:1.15;font-weight:600;color:var(--brand)}
+  h2.title,.card-topic .k,.theorie h4,.proto-head h2,.proto-card h3,.proto-kpis .kpi-n{color:var(--brand)}
+  .brand p{margin:2px 0 0;font-size:12px;color:var(--ink-soft)}
+  .nav-label{font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-soft);padding:14px 10px 8px}
+  .navbtn{
+    display:flex;align-items:center;gap:12px;width:100%;text-align:left;
+    border:none;background:transparent;cursor:pointer;
+    padding:11px 12px;border-radius:10px;color:var(--ink);
+    font-size:14.5px;font-family:var(--sans);font-weight:500;margin-bottom:2px;
+    transition:background .15s,color .15s;
+  }
+  .navbtn:hover{background:var(--mint-soft)}
+  .navbtn.active{background:var(--brand);color:#fff}
+  .navbtn.active .ico{opacity:1}
+  .navbtn .ico{width:22px;display:inline-flex;justify-content:center;opacity:.85;font-size:16px}
+  .sidebar-foot{font-size:11px;color:var(--ink-soft);padding:16px 10px 4px;border-top:1px solid var(--line);margin-top:14px}
+
+  /* ---------- Main ---------- */
+  .main{flex:1;min-width:0;padding:34px clamp(18px,4vw,54px) 80px}
+  .view{display:none;animation:fade .3s ease}
+  .view.active{display:block}
+  @keyframes fade{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}
+
+  .eyebrow{font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:var(--ink-soft);font-weight:600}
+  .topic-tag{font-family:var(--serif);font-style:italic}
+  h2.title{font-family:var(--serif);font-size:clamp(28px,4.4vw,42px);font-weight:600;margin:.15em 0 .1em;line-height:1.08}
+  .lead{font-size:16px;color:var(--ink-soft);max-width:64ch}
+
+  /* Home hero */
+  .hero{
+    background:var(--card);border:1px solid var(--line);border-radius:var(--radius);
+    box-shadow:var(--shadow);padding:clamp(26px,4vw,44px);position:relative;overflow:hidden;
+    border-left:5px solid var(--mint);
+  }
+  .hero:after{content:"";position:absolute;inset:0;pointer-events:none;
+    background:
+      linear-gradient(var(--grid) 1px,transparent 1px),
+      linear-gradient(90deg,var(--grid) 1px,transparent 1px);
+    background-size:24px 24px;opacity:.5;mask:linear-gradient(90deg,transparent 55%,#000)}
+  .hero>*{position:relative;z-index:1}
+
+  .cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:16px;margin-top:26px}
+  .card-topic{
+    background:var(--card);border:1px solid var(--line);border-radius:var(--radius);
+    box-shadow:var(--shadow);padding:20px;cursor:pointer;text-align:left;
+    display:flex;flex-direction:column;gap:8px;transition:transform .16s,box-shadow .16s,border-color .16s;
+    border-top:4px solid var(--accent,#005F6A);
+  }
+  .card-topic:hover{transform:translateY(-3px);box-shadow:0 10px 30px rgba(10,46,48,.13);border-color:var(--line-2)}
+  .card-topic .k{font-family:var(--serif);font-size:20px;font-weight:600}
+  .card-topic .d{font-size:13.5px;color:var(--ink-soft)}
+  .card-topic .go{margin-top:auto;font-size:13px;font-weight:600;color:var(--accent,#005F6A)}
+  .badge{display:inline-block;font-size:11px;font-weight:700;letter-spacing:.06em;
+    padding:3px 8px;border-radius:999px;background:#D6E7E7;color:var(--brand);text-transform:uppercase}
+
+  /* Tabs */
+  .tabs{display:inline-flex;background:var(--paper-deep);border-radius:12px;padding:4px;gap:2px;margin:22px 0 8px}
+  .tab{border:none;background:transparent;padding:9px 18px;border-radius:9px;cursor:pointer;
+    font-size:14px;font-weight:600;color:var(--ink-soft);font-family:var(--sans)}
+  .tab.active{background:var(--card-2);color:var(--brand);box-shadow:var(--shadow)}
+  .panel{display:none}
+  .panel.active{display:block}
+
+  /* Practice card */
+  .sheet{
+    background:var(--card);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow);
+    padding:clamp(20px,3vw,32px);margin-top:14px;position:relative;
+    border-left:5px solid var(--mint);
+  }
+  .sheet-head{display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap;margin-bottom:6px}
+  .sheet-head .meta{font-family:var(--serif);font-size:13px;color:var(--ink-soft)}
+  .scoreline{display:flex;gap:18px;align-items:center;font-size:13px;color:var(--ink-soft)}
+  .scoreline b{color:var(--ink);font-size:15px}
+  .streak{color:var(--green);font-weight:700}
+
+  .qtext{font-size:clamp(18px,2.4vw,22px);font-family:var(--serif);line-height:1.4;margin:10px 0 4px}
+  .qsub{color:var(--ink-soft);font-size:15px;margin-bottom:6px}
+  .answer-row{display:flex;gap:12px;align-items:center;flex-wrap:wrap;margin-top:18px}
+  input[type=text],input[type=number]{
+    font-family:var(--mono);font-size:19px;padding:11px 14px;border:2px solid var(--line);
+    border-radius:10px;width:190px;background:var(--card-2);color:var(--ink);outline:none;
+  }
+  input:focus{border-color:var(--blue)}
+  .unit-lab{font-family:var(--serif);font-size:19px;color:var(--ink)}
+  select,input.opt{
+    font-family:var(--sans);font-size:14px;padding:9px 12px;border:2px solid var(--line);
+    border-radius:9px;background:var(--card-2);color:var(--ink);
+  }
+  .btn{border:none;cursor:pointer;font-family:var(--sans);font-weight:600;font-size:14.5px;
+    padding:11px 20px;border-radius:10px;transition:filter .15s,transform .05s}
+  .btn:active{transform:translateY(1px)}
+  .btn-primary{background:var(--brand);color:#fff}
+  .btn-primary:hover{filter:brightness(1.12)}
+  .btn-green{background:var(--mint);color:#0A2E30}
+  .btn-green:hover{filter:brightness(1.06)}
+  .btn-ghost{background:var(--paper-deep);color:var(--brand)}
+  .btn-ghost:hover{background:var(--line)}
+  .btn-red{background:var(--red);color:#fff}
+  .btn:disabled{opacity:.5;cursor:not-allowed}
+
+  .feedback{margin-top:18px;padding:14px 16px;border-radius:10px;font-size:15px;display:none}
+  .feedback.show{display:block}
+  .feedback.ok{background:var(--mint-soft);border:1px solid var(--mint-line);color:var(--mint-ink)}
+  .feedback.no{background:var(--red-soft);border:1px solid var(--red-line);color:var(--red)}
+  .feedback .sol{margin-top:8px;font-family:var(--mono);white-space:pre-wrap;font-size:13.5px;color:var(--ink);line-height:1.6}
+
+  /* Zweisatz block */
+  .zweisatz{font-family:var(--mono);font-size:15px;line-height:1.9;color:var(--ink);
+    background:var(--card-2);border:1px dashed var(--line-2);border-radius:10px;padding:12px 16px;margin-top:6px;display:inline-block}
+  .zweisatz .g{color:var(--green)}
+  .zweisatz .r{color:var(--red);font-weight:700}
+
+  /* MC options (Füllgraphen) */
+  .stimulus{display:flex;flex-direction:column;align-items:center;gap:6px;margin:6px 0 4px}
+  .stimulus canvas{border:1px solid var(--line);border-radius:12px;background:#fff}
+  .stimulus .lab{font-family:var(--serif);font-weight:600}
+  .options{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:14px;margin-top:18px}
+  .option{border:2px solid var(--line);border-radius:12px;background:var(--card-2);cursor:pointer;padding:8px;
+    display:flex;flex-direction:column;align-items:center;gap:6px;transition:border-color .15s,transform .1s}
+  .option:hover{border-color:var(--mint)}
+  .option .optlab{font-weight:700;font-family:var(--serif);color:var(--ink-soft)}
+  .option.correct{border-color:var(--mint);background:var(--mint-soft)}
+  .option.wrong{border-color:var(--red);background:var(--red-soft)}
+  .option.locked{cursor:default}
+
+  /* Generator form */
+  .form-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px;margin-top:18px}
+  .field{display:flex;flex-direction:column;gap:7px}
+  .field label{font-size:13px;font-weight:600;color:var(--ink)}
+  .field .hint{font-size:12px;color:var(--ink-soft)}
+  .checks{display:flex;flex-direction:column;gap:8px;background:var(--card-2);border:1px solid var(--line);border-radius:10px;padding:12px 14px}
+  .checks label{display:flex;align-items:center;gap:9px;font-size:14px;font-weight:500;cursor:pointer}
+  .checks input{width:17px;height:17px;accent-color:var(--blue)}
+  .gen-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:24px;align-items:center}
+  .gen-note{font-size:13px;color:var(--ink-soft)}
+
+  .pill-diff{display:inline-flex;gap:4px;background:var(--paper-deep);border-radius:10px;padding:4px}
+  .pill-diff button{border:none;background:transparent;padding:8px 14px;border-radius:8px;cursor:pointer;font-weight:600;font-size:13.5px;color:var(--ink-soft)}
+  .pill-diff button.active{background:var(--card-2);color:var(--brand);box-shadow:var(--shadow)}
+
+  .mobilebar{display:none}
+  @media(max-width:820px){
+    .app{flex-direction:column}
+    .sidebar{position:static;width:auto;height:auto;flex:none;display:none;border-right:none;border-bottom:1px solid var(--line)}
+    .sidebar.open{display:block}
+    .mobilebar{display:flex;align-items:center;justify-content:space-between;gap:12px;
+      padding:12px 16px;background:var(--card);border-bottom:1px solid var(--line);position:sticky;top:0;z-index:20}
+    .mobilebar .mm{width:34px;height:34px;border-radius:8px}
+    .mobilebar b{font-family:var(--serif);font-size:16px}
+    .main{padding:22px 18px 70px}
+    input[type=text]{width:150px}
+  }
+  .foot-tip{font-size:12.5px;color:var(--ink-soft);margin-top:10px}
+
+/* --- Ergänzungen für Zahlen und Operationen --- */
+.frac{display:inline-flex;flex-direction:column;align-items:center;vertical-align:middle;margin:0 .12em;line-height:1.05}
+.frac .num{padding:0 .35em .05em}
+.frac .den{padding:.05em .35em 0;border-top:2px solid currentColor}
+.big{font-size:1.28em;font-family:var(--serif)}
+.hintdim{color:var(--ink-soft);font-weight:400;font-size:.72em}
+.p-answer{display:flex;gap:12px;align-items:center;flex-wrap:wrap;margin-top:18px}
+.option.mc-text{min-height:58px;justify-content:center;font-size:16px;font-weight:600;color:var(--ink)}
+.pvt{border-collapse:collapse;font-family:var(--sans);margin:6px 0}
+.pvt th{font-size:12px;color:var(--ink-soft);font-weight:600;padding:2px 0}
+.pvt td{border:1.5px solid var(--ink);width:34px;height:42px;text-align:center;font-size:21px;font-weight:700;color:var(--ink)}
+.pvt td.sep,.pvt th.sep{border:none;width:14px;font-size:22px;font-weight:700}
+.tasklead{color:var(--ink-soft);font-size:15px;margin:0 0 2px}
+.work{font-family:var(--mono);font-size:14.5px;line-height:1.75;color:var(--ink);background:var(--card-2);border:1px dashed var(--line-2);border-radius:10px;padding:10px 14px;margin-top:6px;display:inline-block}
+.work .r{color:var(--red);font-weight:700}
+.scoreline .p-no{color:var(--red)}
+.misslog{margin-top:14px;border:1px solid var(--line);border-radius:12px;background:#fff;padding:2px 16px}
+.misslog summary{cursor:pointer;font-weight:600;color:var(--red);padding:9px 0;list-style:none}
+.misslog summary::-webkit-details-marker{display:none}
+.misslog summary:before{content:'\25b8';margin-right:8px;display:inline-block;transition:transform .15s}
+.misslog[open] summary:before{transform:rotate(90deg)}
+.miss-item{border-top:1px solid var(--line);padding:11px 0}
+.miss-item:first-child{border-top:none}
+.miss-item .mq{font-size:14.5px;color:var(--ink)}
+.miss-item .ms{color:var(--ink-soft);font-size:13px}
+.miss-item .ma{font-size:13.5px;color:var(--ink-soft);margin-top:5px;display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+.miss-item .mx{color:var(--red);font-weight:700}
+.miss-item .work{margin-top:0}
+
+  /* ===== Protokoll ===== */
+  .serie-bar{display:flex;gap:10px;align-items:center;flex-wrap:wrap;margin-top:16px}
+  .serie-bar .gen-note{margin-right:auto}
+  .proto-overlay{position:fixed;inset:0;background:rgba(20,36,63,.45);display:flex;align-items:flex-start;justify-content:center;z-index:100;overflow:auto;padding:24px}
+  .proto-overlay[hidden]{display:none!important}
+  .proto-card{--card:#ffffff;--line:#D5E2E2;background:#fff;border-radius:16px;max-width:780px;width:100%;box-shadow:0 20px 60px rgba(20,36,63,.3);padding:24px 30px 34px;margin:auto}
+  .proto-actions{display:flex;gap:10px;justify-content:flex-end;margin-bottom:14px}
+  .proto-head{display:flex;justify-content:space-between;align-items:flex-start;gap:16px;border-bottom:2px solid var(--brand);padding-bottom:12px}
+  .proto-eyebrow{font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-soft);font-weight:700}
+  .proto-head h2{font-family:var(--serif);font-size:26px;margin:2px 0 0;font-weight:600}
+  .proto-badge{font-size:12.5px;font-weight:700;padding:6px 12px;border-radius:999px;white-space:nowrap}
+  .proto-meta{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;font-size:13.5px;color:var(--ink-soft);margin:12px 0 18px}
+  .proto-line{display:inline-block;min-width:200px;border-bottom:1px solid var(--ink-soft)}
+  .proto-kpis{display:flex;flex-wrap:wrap;gap:12px;margin-bottom:18px}
+  .proto-kpis .kpi{flex:1;min-width:88px;background:var(--card);border:1px solid var(--line);border-radius:12px;padding:12px;text-align:center}
+  .proto-kpis .kpi-n{font-family:var(--serif);font-size:26px;font-weight:700;line-height:1}
+  .proto-kpis .kpi-l{font-size:12px;color:var(--ink-soft);margin-top:4px}
+  .proto-tbl{width:100%;border-collapse:collapse;margin:2px 0 16px;font-size:14px}
+  .proto-tbl th{text-align:left;color:var(--ink-soft);font-size:11.5px;text-transform:uppercase;letter-spacing:.06em;padding:4px 8px;border-bottom:1px solid var(--line)}
+  .proto-tbl td{padding:8px;border-bottom:1px solid var(--line)}
+  .pbar{display:inline-block;width:120px;height:8px;background:var(--paper-deep);border-radius:6px;overflow:hidden;vertical-align:middle}
+  .pbar-fill{display:block;height:100%}
+  .proto-assess{background:var(--card);border:1px solid var(--line);border-left:4px solid var(--brand);border-radius:10px;padding:12px 14px;font-size:14px;margin-bottom:18px}
+  .proto-card h3{font-family:var(--serif);font-size:18px;margin:16px 0 8px;font-weight:600}
+  .proto-none{color:var(--mint-ink);font-size:14px}
+  @media print{
+    .no-print{display:none!important}
+    .app,.mobilebar{display:none!important}
+    body{background:#fff!important}
+    .proto-overlay{position:static!important;display:block!important;background:#fff!important;padding:0!important;overflow:visible!important}
+    .proto-card{box-shadow:none!important;max-width:100%!important;padding:0!important;margin:0!important}
+  }
+
+  /* ===== Theorie ===== */
+  .theorie{max-width:72ch}
+  .theorie p{margin:0 0 12px;font-size:15px;line-height:1.6;color:var(--ink)}
+  .theorie h4{font-family:var(--serif);font-size:17px;font-weight:600;margin:16px 0 6px}
+  .theorie ul{margin:0 0 12px;padding-left:20px;font-size:15px;line-height:1.6}
+  .theorie li{margin:4px 0}
+  .theorie .merke{background:#D6E7E7;border:1px solid #BCD2D2;border-left:4px solid var(--brand);border-radius:10px;padding:11px 14px;margin:14px 0;font-size:15px;line-height:1.55}
+  .theorie .merke b{color:var(--blue-deep)}
+  .theorie .bsp{background:var(--card-2);border:1px dashed var(--line-2);border-radius:10px;padding:11px 14px;margin:12px 0;font-size:14.5px;line-height:1.8;font-family:var(--mono)}
+  .theorie .bsp .lbl{font-family:var(--sans);font-weight:700;color:var(--ink-soft);font-size:11.5px;text-transform:uppercase;letter-spacing:.06em;display:block;margin-bottom:5px}
+  .theorie .frac{display:inline-flex;flex-direction:column;align-items:center;vertical-align:middle;margin:0 .12em;line-height:1.05}
+  .theorie .frac .num{padding:0 .3em .05em}
+  .theorie .frac .den{padding:.05em .3em 0;border-top:2px solid currentColor}
+
+  .illu{margin:14px 0}
+  .illu canvas{background:#fff;border:1px solid var(--line);border-radius:10px}
+  .option canvas{background:#fff;border-radius:8px}
+  .illu-row{display:flex;gap:14px;flex-wrap:wrap;align-items:flex-start}
+  .illu-item{text-align:center}
+  .illu-cap{font-size:11.5px;color:var(--ink-soft);margin-top:5px}
+
+  .ex-ans{display:flex;gap:12px;align-items:center;flex-wrap:wrap;margin-top:18px}
+  .exam-setup .grp-title{font-family:var(--serif);font-weight:600;font-size:15px;margin:14px 0 6px;color:var(--ink)}
+  .exam-setup .checks{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:7px 18px}
+  .exam-setup .checks label{display:flex;gap:8px;align-items:center;font-size:14px;color:var(--ink);cursor:pointer}
+  .exam-setup .row{display:flex;gap:12px;align-items:center;flex-wrap:wrap;margin-top:14px}
+
+/* --- Ergänzungen für Kopfrechentraining --- */
+.big{font-size:1.3em;font-family:var(--serif);font-weight:600}
+.p-controls{display:flex;gap:12px;align-items:center;flex-wrap:wrap}
+.ctl-row{display:flex;gap:16px;align-items:center;flex-wrap:wrap;margin-top:12px;padding-top:12px;border-top:1px solid var(--line)}
+.ctl{display:flex;gap:8px;align-items:center;flex-wrap:wrap}
+.ctl .pill-diff{flex-wrap:wrap;max-width:100%}
+.p-answer{display:flex;gap:12px;align-items:center;flex-wrap:wrap;margin-top:18px}
+.btn-sun{background:var(--amber-soft);color:var(--amber);border:1px solid var(--amber)}
+.btn-sun:hover{filter:brightness(.97)}
+.blitzhud{display:flex;gap:18px;align-items:center;flex-wrap:wrap;margin-top:14px;padding:10px 14px;
+  background:var(--amber-soft);border:1px solid var(--amber);border-radius:10px;font-size:14px;color:var(--amber)}
+.blitzhud b{font-family:var(--mono);font-size:17px;color:var(--ink)}
+.blitzhud[hidden]{display:none!important}
+input.flash-ok{border-color:var(--mint)!important;background:var(--mint-soft)}
+input.flash-no{border-color:var(--red)!important;background:var(--red-soft)}
+.miss{display:inline-block;min-width:1.6em;text-align:center;color:var(--red);border-bottom:2px solid var(--red)}
+.kette{display:flex;flex-wrap:wrap;align-items:center;gap:7px;font-family:var(--mono);
+  font-size:clamp(17px,2.3vw,22px);line-height:1.5}
+.kette .knum{font-weight:700;color:var(--brand);background:var(--card-2);border:2px solid var(--line);border-radius:10px;padding:3px 12px}
+.kette .kop{font-weight:700;color:var(--mint-ink);background:var(--mint-soft);border:1px solid var(--mint-line);
+  border-radius:999px;padding:2px 12px;font-size:.85em;white-space:nowrap}
+.kette .kar{color:var(--ink-soft);font-size:.9em}
+.kette .kres{font-weight:700;color:var(--red);background:var(--red-soft);border:2px dashed var(--red-line);border-radius:10px;padding:3px 14px}
+.tafelwrap{overflow-x:auto;margin:14px 0}
+.tafel{border-collapse:collapse;font-family:var(--mono);font-size:13px;background:var(--card-2)}
+.tafel th,.tafel td{border:1px solid var(--line-2);padding:5px 9px;text-align:center;min-width:34px}
+.tafel th{background:var(--paper-deep);color:var(--brand);font-weight:700}
+.theorie .merke b{color:var(--brand)}
+@media(max-width:820px){.ctl-row{gap:10px}.kette{font-size:17px}}
+</style>
+</head>
+<body>
+<div class="app">
+  <aside class="sidebar" id="sidebar">
+    <div class="brand">
+      <div class="mark" role="img" aria-label="Lernlandschaft Mathematik"></div>
+      <div>
+        <h1>Lernlandschaft</h1>
+        <p>Kopfrechentraining</p>
+      </div>
+    </div>
+    <nav id="nav"></nav>
+    <div class="sidebar-foot">
+      Üben, Blitzrunde oder Arbeitsblatt als PDF – in jedem Thema.
+    </div>
+  </aside>
+  <div style="flex:1;min-width:0">
+    <div class="mobilebar">
+      <div style="display:flex;align-items:center;gap:10px"><div class="mm" role="img" aria-label="Lernlandschaft Mathematik"></div><b>Lernlandschaft</b></div>
+      <button class="btn btn-ghost" id="menuToggle">Menü</button>
+    </div>
+    <main class="main" id="main"></main>
+  </div>
+</div>
+<script>
+"use strict";
+/*SHARED-START*/
+/* ============ Basis-Helfer ============ */
+const $=(s,el=document)=>el.querySelector(s);
+const $$=(s,el=document)=>[...el.querySelectorAll(s)];
+const ri=(a,b)=>Math.floor(Math.random()*(b-a+1))+a;
+const pick=a=>a[Math.floor(Math.random()*a.length)];
+const shuffle=a=>{a=a.slice();for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]];}return a;};
+function grp(n){const neg=n<0;const s=String(Math.abs(n));return (neg?'-':'')+s.replace(/\B(?=(\d{3})+(?!\d))/g,'’');}
+function parseNum(s){if(s==null)return NaN;return parseFloat(String(s).replace(',','.').replace(/[^0-9.\-]/g,''));}
+function escH(s){return String(s).replace(/[&<>"]/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c];});}
+// Erzeugt n moeglichst verschiedene Aufgaben (verhindert Dubletten auf einem Arbeitsblatt).
+function distinctTasks(gen,n,keyFn){
+  const out=[],seen=new Set();
+  let guard=0,maxTries=n*40+200;
+  while(out.length<n&&guard++<maxTries){
+    const t=gen(),k=String(keyFn?keyFn(t):(t.pdfQ||t.promptHTML||''));
+    if(seen.has(k))continue;
+    seen.add(k);out.push(t);
+  }
+  while(out.length<n)out.push(gen());
+  return out;
+}
+
+/* ============================================================
+   1) EINMALEINS
+   Kleines 1x1  : Reihen 1-10
+   Grosses 1x1  : Reihen 11-20
+   Modi: mal (Produkt), fehlend (fehlender Faktor), division (Umkehraufgabe), gemischt
+   Stufe steuert, WELCHE Faktoren gezogen werden:
+     leicht = Kernaufgaben (1, 2, 5, 10) bzw. kleine Partnerzahlen
+     mittel = ganzer Bereich
+     schwer = nur die "harten" Kombinationen (keine 1, 2, 5, 10 als Partner)
+============================================================ */
+const EM_MODES=['mal','fehlend','division'];
+function emPartner(diff,lo,hi){
+  if(diff===1){const kern=[1,2,5,10].filter(x=>x>=lo&&x<=hi);if(kern.length&&Math.random()<0.75)return pick(kern);return ri(lo,Math.min(hi,5));}
+  if(diff===3){const hart=[];for(let i=lo;i<=hi;i++)if([1,2,5,10].indexOf(i)<0)hart.push(i);if(hart.length)return pick(hart);}
+  return ri(lo,hi);
+}
+function emBuild(a,b,mode,sub,tip){
+  const p=a*b;
+  let m=mode==='gemischt'?pick(['mal','mal','fehlend','division']):(mode||'mal');
+  if(m==='fehlend'){
+    const first=Math.random()<0.5;
+    const q=first?('<span class="miss">?</span> &middot; '+b+' = '+p):(a+' &middot; <span class="miss">?</span> = '+p);
+    const ans=first?a:b;
+    return {answerType:'text',sub:sub,promptHTML:'<span class="big">'+q+'</span>',placeholder:'Zahl',inputMode:'numeric',
+      accept:v=>Math.round(parseNum(v))===ans,
+      solutionHTML:'<span class="work">'+a+' &middot; '+b+' = '+p+' &rarr; fehlende Zahl: <span class="r">'+ans+'</span></span>',
+      answerText:String(ans),
+      pdfQ:(first?'____ · '+b+' = '+p:a+' · ____ = '+p),pdfSol:String(ans),_v:ans,_short:String(ans)};
+  }
+  if(m==='division'){
+    const byA=Math.random()<0.5;
+    const d=byA?a:b,ans=byA?b:a;
+    return {answerType:'text',sub:sub,promptHTML:'<span class="big">'+p+' : '+d+' =</span>',placeholder:'Ergebnis',inputMode:'numeric',
+      accept:v=>Math.round(parseNum(v))===ans,
+      solutionHTML:'<span class="work">'+d+' &middot; <span class="r">'+ans+'</span> = '+p+', also '+p+' : '+d+' = <span class="r">'+ans+'</span></span>',
+      answerText:String(ans),
+      pdfQ:p+' : '+d+' =',pdfSol:String(ans),_v:ans,_short:String(ans)};
+  }
+  return {answerType:'text',sub:sub,promptHTML:'<span class="big">'+a+' &middot; '+b+' =</span>',placeholder:'Ergebnis',inputMode:'numeric',
+    accept:v=>Math.round(parseNum(v))===p,
+    solutionHTML:'<span class="work">'+a+' &middot; '+b+' = <span class="r">'+p+'</span>'+(tip?'<br>'+tip:'')+'</span>',
+    answerText:String(p),
+    pdfQ:a+' · '+b+' =',pdfSol:String(p),_v:p,_short:String(p)};
+}
+function genKlein(diff,sel){
+  sel=sel||{};
+  const reihe=sel.reihe&&sel.reihe!=='all'?+sel.reihe:0;
+  const mode=sel.mode||'gemischt';
+  const a=reihe?reihe:(diff===3?pick([3,4,6,7,8,9]):ri(diff===1?2:1,10));
+  const b=emPartner(diff,1,10);
+  return emBuild(a,b,mode,'Kleines 1×1'+(reihe?' · Reihe der '+reihe:''),'');
+}
+function genGross(diff,sel){
+  sel=sel||{};
+  const reihe=sel.reihe&&sel.reihe!=='all'?+sel.reihe:0;
+  const mode=sel.mode||'gemischt';
+  const a=reihe?reihe:ri(11,20);
+  let b;
+  if(diff===1)b=emPartner(1,1,10);
+  else if(diff===2)b=ri(2,12);
+  else b=ri(11,20);
+  const z=Math.floor(a/10)*10,e=a%10;
+  const tip='Zerlegen: '+a+' &middot; '+b+' = '+z+' &middot; '+b+' + '+e+' &middot; '+b+' = '+(z*b)+' + '+(e*b);
+  return emBuild(a,b,mode,'Grosses 1×1'+(reihe?' · Reihe der '+reihe:''),tip);
+}
+
+const ZEHNER=[10,20,30,40,50,60,70,80,90];
+function zehnerTip(x,y){
+  let ax=x,ay=y,n=0;
+  while(ax%10===0&&ax>=10){ax/=10;n++;}
+  while(ay%10===0&&ay>=10){ay/=10;n++;}
+  return 'Kernaufgabe '+ax+' &middot; '+ay+' = '+(ax*ay)+', dann '+(n===1?'eine Null':n+' Nullen')+' anhängen.';
+}
+function genZehnerEins(diff,sel){
+  sel=sel||{};
+  const mode=sel.mode||'gemischt';
+  const fix=sel.reihe&&sel.reihe!=='all';
+  const z=fix?+sel.reihe:(diff===1?pick([10,20,50]):diff===2?pick(ZEHNER):pick([30,40,60,70,80,90]));
+  let a=diff===3?pick([3,4,6,7,8,9]):ri(2,9);
+  if(diff===3&&!fix&&Math.random()<0.35)a=pick([20,30,40,50,60,70,80,90]);
+  let x=a,y=z;
+  if(Math.random()<0.4){x=z;y=a;}
+  return emBuild(x,y,mode,'Zehnereinmaleins',zehnerTip(x,y));
+}
+function genGrossZehner(diff,sel){
+  sel=sel||{};
+  const mode=sel.mode||'gemischt';
+  const a=sel.reihe&&sel.reihe!=='all'?+sel.reihe:ri(11,20);
+  const z=diff===1?pick([10,20,50]):diff===2?pick([20,30,40,50]):pick([30,40,60,70,80,90]);
+  let x=a,y=z;
+  if(Math.random()<0.35){x=z;y=a;}
+  return emBuild(x,y,mode,'Grosses 1×1 mit Zehnern',zehnerTip(x,y));
+}
+
+/* ============================================================
+   2) KOPFRECHNEN NACH SIKORE-LEVEL  (Aufgabentyp wie auf sikore.org)
+   Jedes Level legt fest: Zahlenraum, Spannweite fuer Plus/Minus
+   und den groessten Faktor bzw. Divisor.
+   Bezeichnung wie auf sikore.org: Sikore 12, Sikore 13, ...
+   Gerechnet wird als Rechenkette Schritt fuer Schritt von links
+   nach rechts - jeder Zwischenwert bleibt im Zahlenraum, alle
+   Zwischenergebnisse sind natuerliche Zahlen.
+============================================================ */
+const KLEVELS={
+  12:{max:500 ,add:250 ,mul:10},
+  13:{max:500 ,add:250 ,mul:20},
+  15:{max:1000,add:500 ,mul:10},
+  16:{max:1000,add:500 ,mul:20},
+  17:{max:1000,add:500 ,mul:30},
+  19:{max:2000,add:1000,mul:20},
+  20:{max:2000,add:1000,mul:30}
+};
+const KLEVEL_IDS=[12,13,15,16,17,19,20];
+function kShort(l){const c=KLEVELS[l];return 'Sikore '+l+' · bis '+c.max;}
+function kLong(l){const c=KLEVELS[l];return 'Bis '+c.max+' · Plus/Minus bis '+c.add+' · Mal/Geteilt bis '+c.mul+'.';}
+function kRound(n,diff,hi){
+  let v=n;
+  if(diff===1)v=Math.round(n/10)*10;
+  else if(diff===2)v=Math.round(n/5)*5;
+  if(v<2)v=2;if(v>hi)v=hi;
+  return v;
+}
+function kDivisors(n,maxd){const out=[];for(let d=2;d<=maxd;d++)if(n%d===0&&n/d>=1)out.push(d);return out;}
+function kPlan(steps){
+  const pool=['+','+','+','-','-','-','·','·',':',':'];
+  const plan=[];for(let i=0;i<steps;i++)plan.push(pick(pool));
+  if(steps>1&&plan.indexOf('·')<0&&plan.indexOf(':')<0)plan[ri(0,steps-1)]=pick(['·',':']);
+  return plan;
+}
+function kStart(cfg,diff,firstOp){
+  if(firstOp==='·'){                         // damit das Produkt im Zahlenraum bleibt
+    const hi=Math.max(3,Math.floor(cfg.max/2));
+    let v=ri(2,Math.min(hi,Math.floor(cfg.max/2)));
+    if(diff===1)v=Math.max(2,Math.round(v/10)*10);
+    return v;
+  }
+  let v=ri(Math.round(cfg.max*0.12),cfg.max);
+  if(diff===1)v=Math.max(10,Math.round(v/10)*10);
+  else if(diff===2&&Math.random()<0.5)v=Math.max(5,Math.round(v/5)*5);
+  return Math.min(cfg.max,Math.max(2,v));
+}
+function kApply(cur,op,cfg,diff,nextMul){
+  if(op==='+'){
+    const hi=Math.min(cfg.add,cfg.max-cur);
+    if(hi<2)return null;
+    const n=kRound(ri(2,hi),diff,hi);
+    return {op:'+',n:n,v:cur+n};
+  }
+  if(op==='-'){
+    const hi=Math.min(cfg.add,cur-1);
+    if(hi<2)return null;
+    if(nextMul){                                  // Ergebnis klein halten, damit danach multipliziert werden kann
+      const lo=Math.max(2,cur-hi),up=Math.min(cur-1,Math.max(2,Math.floor(cfg.max/cfg.mul)));
+      if(up>=lo){const r=ri(lo,up);return {op:'-',n:cur-r,v:r};}
+    }
+    const n=kRound(ri(2,hi),diff,hi);
+    return {op:'-',n:n,v:cur-n};
+  }
+  if(op==='·'){
+    const hi=Math.min(cfg.mul,Math.floor(cfg.max/cur));
+    if(hi<2)return null;
+    let f=ri(2,hi);
+    if(diff===1&&hi>=10&&Math.random()<0.5)f=pick([2,5,10].filter(x=>x<=hi));
+    return {op:'·',n:f,v:cur*f};
+  }
+  let ds=kDivisors(cur,cfg.mul);
+  if(nextMul)ds=ds.filter(d=>cur/d<=Math.max(2,Math.floor(cfg.max/cfg.mul)))||ds;
+  if(!ds.length)ds=kDivisors(cur,cfg.mul);
+  if(!ds.length)return null;
+  const d=pick(ds);
+  return {op:':',n:d,v:cur/d};
+}
+function kTry(cfg,diff,steps){
+  const plan=kPlan(steps);
+  let cur=kStart(cfg,diff,plan[0]);
+  const parts=[],vals=[cur];
+  for(let i=0;i<steps;i++){
+    const st=kApply(cur,plan[i],cfg,diff,plan[i+1]==='·');
+    if(!st)return null;
+    if(st.v<1||st.v>cfg.max||!Number.isInteger(st.v))return null;
+    const prev=parts[parts.length-1];
+    if(prev&&prev.op===st.op&&prev.n===st.n)return null;   // zwei gleiche Schritte hintereinander vermeiden
+    cur=st.v;parts.push(st);vals.push(cur);
+  }
+  if(steps>1&&vals[vals.length-1]===vals[0])return null;
+  return {start:vals[0],parts:parts,vals:vals,res:cur};
+}
+function genLevel(lvl,diff,sel){
+  const cfg=KLEVELS[lvl];
+  sel=sel||{};
+  let steps=sel.kette&&sel.kette!=='auto'?+sel.kette:(diff===1?1:diff===2?2:3);
+  if(!(steps>=1&&steps<=3))steps=1;
+  let ch=null,guard=0;
+  while(!ch&&guard++<80)ch=kTry(cfg,diff,steps);
+  if(!ch){guard=0;while(!ch&&guard++<80)ch=kTry(cfg,diff,1);}
+  if(!ch)ch={start:2,parts:[{op:'+',n:2,v:4}],vals:[2,4],res:4};
+  const sub=kShort(lvl)+(ch.parts.length>1?' · Rechenkette':'');
+  const lines=[];
+  for(let i=0;i<ch.parts.length;i++)lines.push(ch.vals[i]+' '+ch.parts[i].op+' '+ch.parts[i].n+' = '+ch.vals[i+1]);
+  const solHTML='<span class="work">'+lines.slice(0,-1).map(escH).join('<br>')+(lines.length>1?'<br>':'')
+    +'<span class="r">'+escH(lines[lines.length-1])+'</span></span>';
+  if(ch.parts.length===1){
+    const p=ch.parts[0];
+    return {answerType:'text',sub:sub,promptHTML:'<span class="big">'+ch.start+' '+(p.op==='-'?'\u2212':p.op)+' '+p.n+' =</span>',
+      placeholder:'Ergebnis',inputMode:'numeric',
+      accept:v=>Math.round(parseNum(v))===ch.res,accept2:ch.res,
+      solutionHTML:solHTML,answerText:String(ch.res),
+      pdfQ:ch.start+' '+p.op+' '+p.n+' =',pdfSol:lines,_v:ch.res,_short:String(ch.res),_steps:1};
+  }
+  const opH=o=>o==='-'?'\u2212':o;
+  let html='<span class="kette"><span class="knum">'+ch.start+'</span>';
+  ch.parts.forEach(function(p,i){
+    html+='<span class="kar">&rarr;</span><span class="kop">'+opH(p.op)+' '+p.n+'</span>';
+    if(i===ch.parts.length-1)html+='<span class="kar">&rarr;</span><span class="kres">?</span>';
+  });
+  html+='</span>';
+  const pdfQ=ch.start+' '+ch.parts.map(p=>'-> '+p.op+' '+p.n).join(' ')+' -> ?';
+  return {answerType:'text',sub:sub,promptHTML:html,placeholder:'Ergebnis',inputMode:'numeric',
+    accept:v=>Math.round(parseNum(v))===ch.res,
+    solutionHTML:solHTML,answerText:String(ch.res),
+    pdfQ:pdfQ,pdfSol:lines,_v:ch.res,_short:String(ch.res),_steps:ch.parts.length};
+}
+/*SHARED-END*/
+/*EXAMAPI-START*/
+/* ============================================================================
+   EXAM_API  -  Adapter fuer den Pruefungsmodus im Hub.
+   Verwendet unveraendert die Generatoren der Uebungen dieser App.
+============================================================================ */
+var EXAM_API=(function(){
+  function fix(t){
+    if(!t.pdfQ)t.pdfQ=String(t.promptHTML||'').replace(/<br\s*\/?>/g,' ').replace(/<[^>]+>/g,'')
+      .replace(/&middot;/g,'·').replace(/&rarr;/g,'->').replace(/&nbsp;/g,' ').replace(/\s+/g,' ').trim();
+    if(!t.pdfSol&&t.solutionHTML)t.pdfSol=String(t.solutionHTML).replace(/<br\s*\/?>/g,'\n').replace(/<[^>]+>/g,'')
+      .replace(/&middot;/g,'·').replace(/&rarr;/g,'->').replace(/&nbsp;/g,' ').trim();
+    return t;
+  }
+  var api={
+    klein:function(d){return fix(genKlein(d,{mode:'gemischt'}));},
+    gross:function(d){return fix(genGross(d,{mode:'gemischt'}));},
+    zehner1x1:function(d){return fix(genZehnerEins(d,{mode:'gemischt'}));},
+    grosszehner:function(d){return fix(genGrossZehner(d,{mode:'gemischt'}));}
+  };
+  KLEVEL_IDS.forEach(function(l){api['lvl'+l]=function(d){return fix(genLevel(l,d,{}));};});
+  return api;
+})();
+/*EXAMAPI-END*/
+
+/* ===== Protokoll (Auswertung einer Uebungsserie) ===== */
+function protoEsc(s){return String(s).replace(/[&<>"]/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c];});}
+function newDiffAgg(){return {1:{ok:0,n:0},2:{ok:0,n:0},3:{ok:0,n:0}};}
+function aggRecord(agg,diff,ok){if(!agg[diff])agg[diff]={ok:0,n:0};agg[diff].n++;if(ok)agg[diff].ok++;}
+function protoBar(p){return '<span class="pbar"><span class="pbar-fill" style="width:'+p+'%;background:'+(p>=70?'#2f9e5f':(p>=50?'#e6a23c':'#d5473e'))+'"></span></span>';}
+function protoDiffTable(byDiff){if(!byDiff)return '';var labs={1:'leicht (Basis)',2:'mittel',3:'schwer'},rows='',any=false;[1,2,3].forEach(function(d){var o=byDiff[d];if(o&&o.n){any=true;var p=Math.round(o.ok/o.n*100);rows+='<tr><td>'+labs[d]+'</td><td>'+o.ok+' / '+o.n+'</td><td>'+p+' %</td><td>'+protoBar(p)+'</td></tr>';}});return any?('<h3>Nach Schwierigkeit</h3><table class="proto-tbl"><thead><tr><th>Stufe</th><th>Richtig</th><th>Quote</th><th></th></tr></thead><tbody>'+rows+'</tbody></table>'):'';}
+function protoAssess(pct){if(pct>=90)return['sicher beherrscht','#1f7a45','#e9f7ef'];if(pct>=70)return['grösstenteils sicher','#846516','#f6efd8'];if(pct>=50)return['noch unsicher','#a9631b','#fbeede'];return['noch nicht sicher','#b23c30','#fdeeec'];}
+function protoAssessText(pct,byDiff){var base;if(pct>=90)base='Das Kopfrechnen sitzt sicher.';else if(pct>=70)base='Das Kopfrechnen ist grösstenteils sicher; einzelne Fehler sollten noch angeschaut werden.';else if(pct>=50)base='Die Grundlagen sind vorhanden, das Tempo und die Sicherheit fehlen noch – täglich kurz weiterüben.';else base='Die Grundlagen sind noch nicht automatisiert – zuerst das kleine Einmaleins festigen.';var weak='';if(byDiff){var worst=null,labs={1:'leicht',2:'mittel',3:'schwer'};[1,2,3].forEach(function(dn){var o=byDiff[dn];if(o&&o.n>=2){var p=o.ok/o.n;if(worst===null||p<worst.p)worst={d:dn,p:p};}});if(worst&&worst.p<0.7)weak=' Besondere Schwierigkeiten zeigen sich bei den Aufgaben der Stufe «'+labs[worst.d]+'».';}return base+weak;}
+function ensureProtoOverlay(){var ov=document.getElementById('protoOverlay');if(ov)return ov;ov=document.createElement('div');ov.className='proto-overlay';ov.id='protoOverlay';ov.hidden=true;ov.innerHTML='<div class="proto-card"><div class="proto-actions no-print"><button class="btn btn-primary" id="protoPrint">Drucken / als PDF speichern</button><button class="btn btn-ghost" id="protoClose">Schliessen</button></div><div id="protoBody"></div></div>';document.body.appendChild(ov);ov.querySelector('#protoPrint').addEventListener('click',function(){window.print();});ov.querySelector('#protoClose').addEventListener('click',function(){ov.hidden=true;});ov.addEventListener('click',function(e){if(e.target===ov)ov.hidden=true;});return ov;}
+function showProtocol(d){var ov=ensureProtoOverlay();var pct=d.total?Math.round(d.correct/d.total*100):0;var a=protoAssess(pct);var date=new Date().toLocaleDateString('de-CH');var missList=(d.misses&&d.misses.length)?('<h3>Fehler im Detail ('+d.misses.length+')</h3><div class="proto-miss">'+d.misses.join('')+'</div>'):'<p class="proto-none">Keine Fehler in dieser Serie – alle Aufgaben richtig gelöst.</p>';document.getElementById('protoBody').innerHTML='<div class="proto-head"><div><div class="proto-eyebrow">Protokoll · '+protoEsc(d.app)+'</div><h2>'+protoEsc(d.tool)+'</h2></div><div class="proto-badge" style="color:'+a[1]+';background:'+a[2]+'">'+a[0]+'</div></div><div class="proto-meta"><span>Name: <span class="proto-line"></span></span><span>Datum: '+date+'</span></div><div class="proto-kpis"><div class="kpi"><div class="kpi-n">'+d.total+'</div><div class="kpi-l">Aufgaben</div></div><div class="kpi"><div class="kpi-n" style="color:#1E7454">'+d.correct+'</div><div class="kpi-l">richtig</div></div><div class="kpi"><div class="kpi-n" style="color:#C0392B">'+d.wrong+'</div><div class="kpi-l">falsch</div></div><div class="kpi"><div class="kpi-n">'+pct+' %</div><div class="kpi-l">Erfolgsquote</div></div>'+(d.maxStreak?'<div class="kpi"><div class="kpi-n">'+d.maxStreak+'</div><div class="kpi-l">längste Serie</div></div>':'')+(d.blitzBest?'<div class="kpi"><div class="kpi-n">'+d.blitzBest+'</div><div class="kpi-l">Blitzrunde (Bestwert)</div></div>':'')+'</div>'+protoDiffTable(d.byDiff)+'<div class="proto-assess"><b>Einschätzung:</b> '+protoAssessText(pct,d.byDiff)+'</div>'+missList;ov.hidden=false;ov.scrollTop=0;}
+
+/* ============ Uebungs-Engine fuer Kopfrechnen ============
+   Ein Eingabefeld, mehrere Auswahlleisten (z. B. Reihe und Modus),
+   Schwierigkeit und eine Blitzrunde ueber 60 Sekunden.
+========================================================== */
+const BLITZ_SECONDS=60;
+function mountKopf(panel,topic){
+  let diff=1,cur=null,locked=false,lastSig='';
+  let stats={ok:0,wrong:0,streak:0},maxStreak=0,agg=newDiffAgg(),mistakes=[];
+  let blitz=null,blitzBest=0,timer=null;
+  const state={};
+  (topic.controls||[]).forEach(c=>{state[c.key]=c.options[0].v;});
+  const ctlHTML=(topic.controls||[]).map(c=>
+    '<span class="ctl"><span class="gen-note">'+c.label+':</span><span class="pill-diff p-ctl" data-key="'+c.key+'">'
+    +c.options.map((o,i)=>'<button data-v="'+o.v+'" class="'+(i===0?'active':'')+'">'+o.label+'</button>').join('')
+    +'</span></span>').join('');
+  panel.innerHTML=
+   '<div class="sheet">'+
+    '<div class="sheet-head">'+
+      '<div class="scoreline"><span>Richtig: <b class="p-ok">0</b></span><span>Falsch: <b class="p-no">0</b></span><span class="streak p-streak">Serie: 0 🔥</span></div>'+
+      '<div class="p-controls"><span class="ctl"><span class="gen-note">Stufe:</span><span class="pill-diff p-diff"><button data-d="1" class="active">leicht</button><button data-d="2">mittel</button><button data-d="3">schwer</button></span></span></div>'+
+    '</div>'+
+    (ctlHTML?'<div class="ctl-row">'+ctlHTML+'</div>':'')+
+    '<div class="blitzhud p-bh" hidden><span>⏱ <b class="p-time">'+BLITZ_SECONDS+'</b> s</span><span>Richtig: <b class="p-bok">0</b></span><span>Falsch: <b class="p-bno">0</b></span></div>'+
+    '<p class="qsub p-sub"></p>'+
+    '<div class="qtext p-q"></div>'+
+    '<div class="p-answer"></div>'+
+    '<div class="feedback p-fb"></div>'+
+    '<div class="serie-bar"><span class="gen-note p-prog">Noch keine Aufgabe in dieser Serie.</span>'+
+      '<button class="btn btn-sun p-blitz">⚡ Blitzrunde (60 s)</button>'+
+      '<button class="btn btn-ghost p-reset">Neue Serie</button>'+
+      '<button class="btn btn-primary p-eval">Serie auswerten</button></div>'+
+   '</div>'+
+   '<details class="misslog p-miss" hidden><summary>Gemachte Fehler (<span class="p-mc">0</span>)</summary><div class="p-mlist"></div></details>';
+  const q=s=>panel.querySelector(s);
+  const fbEl=q('.p-fb');
+  $$('.p-ctl',panel).forEach(grpEl=>{
+    grpEl.addEventListener('click',e=>{const b=e.target.closest('button');if(!b||blitz)return;
+      state[grpEl.dataset.key]=b.dataset.v;
+      $$('button',grpEl).forEach(x=>x.classList.toggle('active',x===b));next();});
+  });
+  q('.p-diff').addEventListener('click',e=>{const b=e.target.closest('button');if(!b||blitz)return;diff=+b.dataset.d;
+    $$('.p-diff button',panel).forEach(x=>x.classList.toggle('active',x===b));next();});
+  q('.p-eval').addEventListener('click',()=>{const tot=stats.ok+stats.wrong;
+    if(!tot){q('.p-prog').textContent='Bitte zuerst Aufgaben lösen.';return;}
+    showProtocol({app:'Kopfrechentraining',tool:(topic.title||'Übung'),total:tot,correct:stats.ok,wrong:stats.wrong,
+      maxStreak:maxStreak,byDiff:agg,misses:mistakes,blitzBest:blitzBest});});
+  q('.p-reset').addEventListener('click',()=>{if(blitz)stopBlitz(true);
+    stats={ok:0,wrong:0,streak:0};mistakes=[];maxStreak=0;agg=newDiffAgg();
+    q('.p-ok').textContent='0';q('.p-no').textContent='0';q('.p-streak').textContent='Serie: 0 🔥';
+    q('.p-mlist').innerHTML='';q('.p-mc').textContent='0';q('.p-miss').hidden=true;
+    q('.p-prog').textContent='Noch keine Aufgabe in dieser Serie.';next();});
+  q('.p-blitz').addEventListener('click',()=>{blitz?stopBlitz(false):startBlitz();});
+
+  function score(ok){
+    if(ok){stats.ok++;stats.streak++;}else{stats.wrong++;stats.streak=0;}
+    aggRecord(agg,diff,ok);if(stats.streak>maxStreak)maxStreak=stats.streak;
+    q('.p-ok').textContent=stats.ok;q('.p-no').textContent=stats.wrong;
+    q('.p-streak').textContent='Serie: '+stats.streak+' 🔥';
+    q('.p-prog').textContent='Aufgaben in dieser Serie: '+(stats.ok+stats.wrong);
+  }
+  function fb(ok,html){fbEl.className='feedback '+(ok?'ok':'no')+' show';fbEl.innerHTML=html;}
+  function addMiss(userHTML){
+    mistakes.unshift('<div class="miss-item"><div class="mq">'+((cur.sub?'<span class="ms">'+escH(cur.sub)+'</span><br>':'')+(cur.promptHTML||''))+'</div>'+
+      '<div class="ma">Deine Antwort: <b class="mx">'+userHTML+'</b>'+(cur.solutionHTML?' · '+cur.solutionHTML:'')+'</div></div>');
+    q('.p-mlist').innerHTML=mistakes.join('');q('.p-mc').textContent=mistakes.length;q('.p-miss').hidden=false;
+  }
+  function next(){
+    locked=false;let t=0,sig;
+    do{cur=topic.gen(diff,state);sig=(cur.sub||'')+'|'+(cur.promptHTML||'');t++;}while(sig===lastSig&&t<14);
+    lastSig=sig;fbEl.className='feedback';
+    q('.p-sub').textContent=cur.sub||'';q('.p-sub').style.display=cur.sub?'block':'none';
+    q('.p-q').innerHTML=cur.promptHTML||'';
+    renderAnswer();
+  }
+  function renderAnswer(){
+    const row=q('.p-answer');row.innerHTML='';
+    const inp=document.createElement('input');inp.type='text';inp.className='p-in';inp.placeholder=cur.placeholder||'Ergebnis';
+    inp.autocomplete='off';inp.autocapitalize='off';inp.setAttribute('autocorrect','off');inp.spellcheck=false;
+    inp.setAttribute('inputmode',cur.inputMode||'numeric');
+    row.appendChild(inp);
+    const chk=document.createElement('button');chk.className='btn btn-green';chk.textContent=blitz?'Weiter':'Kontrollieren';
+    chk.addEventListener('click',checkText);row.appendChild(chk);
+    if(!blitz){
+      if(cur.solutionHTML){const s=document.createElement('button');s.className='btn btn-ghost';s.textContent='Lösungsweg';
+        s.addEventListener('click',()=>fb(true,'<b>Lösungsweg:</b><br>'+cur.solutionHTML));row.appendChild(s);}
+      const nx=document.createElement('button');nx.className='btn btn-ghost';nx.textContent='Nächste Aufgabe';
+      nx.addEventListener('click',next);row.appendChild(nx);
+    }
+    inp.addEventListener('keydown',e=>{if(e.key==='Enter'){if(!blitz&&fbEl.classList.contains('show'))next();else checkText();}});
+    inp.focus();
+  }
+  function checkText(){
+    if(locked&&!blitz)return;
+    const el=q('.p-in');if(!el)return;
+    const val=el.value;if(val.trim()==='')return;
+    const ok=!!cur.accept(val);
+    if(blitz){
+      score(ok);if(ok)blitz.ok++;else{blitz.no++;addMiss(escH(val));}
+      q('.p-bok').textContent=blitz.ok;q('.p-bno').textContent=blitz.no;
+      el.classList.remove('flash-ok','flash-no');void el.offsetWidth;el.classList.add(ok?'flash-ok':'flash-no');
+      next();return;
+    }
+    locked=true;const cb=q('.p-answer .btn-green');if(cb)cb.disabled=true;
+    score(ok);
+    fb(ok,(ok?'<b>Richtig!</b>':'<b>Nicht ganz.</b>')+(cur.solutionHTML?'<br>'+cur.solutionHTML:' Richtig: '+(cur.answerText||'')));
+    if(!ok)addMiss(escH(val));
+  }
+  function startBlitz(){
+    blitz={left:BLITZ_SECONDS,ok:0,no:0};
+    q('.p-bh').hidden=false;q('.p-time').textContent=BLITZ_SECONDS;q('.p-bok').textContent='0';q('.p-bno').textContent='0';
+    q('.p-blitz').textContent='⏹ Blitzrunde beenden';q('.p-blitz').classList.add('btn-red');q('.p-blitz').classList.remove('btn-sun');
+    fbEl.className='feedback';next();
+    timer=setInterval(()=>{blitz.left--;q('.p-time').textContent=Math.max(0,blitz.left);if(blitz.left<=0)stopBlitz(false);},1000);
+  }
+  function stopBlitz(silent){
+    if(timer){clearInterval(timer);timer=null;}
+    const r=blitz;blitz=null;
+    q('.p-bh').hidden=true;
+    q('.p-blitz').textContent='⚡ Blitzrunde (60 s)';q('.p-blitz').classList.remove('btn-red');q('.p-blitz').classList.add('btn-sun');
+    if(r&&!silent){
+      if(r.ok>blitzBest)blitzBest=r.ok;
+      fb(r.ok>=r.no,'<b>Blitzrunde beendet.</b> '+r.ok+' richtig, '+r.no+' falsch in '+BLITZ_SECONDS+' Sekunden.'
+        +(blitzBest?'<br>Bestwert in dieser Sitzung: <b>'+blitzBest+'</b> richtige Aufgaben.':''));
+    }
+    next();
+  }
+  next();
+}
+
+/* ============ Arbeitsblatt-Generator (Formular) ============ */
+function mountGenerator(panel,topic){
+  const modesHTML=topic.modes?('<label style="margin-top:10px">Aufgabentyp</label><div class="checks gmode">'
+    +topic.modes.map((m,i)=>'<label><input type="radio" name="mode-'+topic.key+'" value="'+m.v+'" '+(i===0?'checked':'')+'> '+m.t+'</label>').join('')
+    +'</div>'):'';
+  const rc=(topic.controls||[]).filter(c=>c.key==='reihe')[0];
+  const rowsHTML=rc?('<label style="margin-top:10px">'+rc.label+'</label><select class="opt growrow">'
+    +rc.options.map(o=>'<option value="'+o.v+'">'+o.label+'</option>').join('')+'</select>'):'';
+  panel.innerHTML=
+   '<div class="sheet">'+
+    '<div class="eyebrow">Arbeitsblatt «'+topic.nav+'»</div>'+
+    '<div class="form-grid">'+
+      '<div class="field"><label>Serie / Bezeichnung</label><input class="opt gserie" value="Serie 1">'+
+        '<label style="margin-top:8px">Anzahl Aufgaben</label><input class="opt gcount" type="number" min="'+topic.min+'" max="'+topic.max+'" value="'+(topic.def||12)+'">'+
+        rowsHTML+'</div>'+
+      '<div class="field"><label>Schwierigkeit</label><span class="pill-diff gdiff"><button data-d="1" class="active">leicht</button><button data-d="2">mittel</button><button data-d="3">schwer</button></span>'+
+        modesHTML+
+        '<p class="hint" style="margin-top:10px">Aufgaben und Lösungen im Stil der Grundaufgaben-Arbeitsblätter.</p></div>'+
+    '</div>'+
+    '<div class="gen-actions"><button class="btn btn-primary gmake">PDF mit Aufgaben &amp; Lösungen erstellen</button>'+
+      (topic.extraPdf?'<button class="btn btn-ghost gextra">'+topic.extraPdf.label+'</button>':'')+
+      '<span class="gen-note">Layout «Kopfrechentraining».</span></div>'+
+   '</div>';
+  let diff=1;
+  panel.querySelector('.gdiff').addEventListener('click',e=>{const b=e.target.closest('button');if(!b)return;diff=+b.dataset.d;
+    $$('.gdiff button',panel).forEach(x=>x.classList.toggle('active',x===b));});
+  function settings(){
+    const mode=topic.modes?(panel.querySelector('.gmode input:checked')||{}).value:null;
+    const reihe=rc?panel.querySelector('.growrow').value:null;
+    return {mode:mode,reihe:reihe,kette:mode};
+  }
+  panel.querySelector('.gmake').addEventListener('click',()=>{
+    const n=Math.max(topic.min,Math.min(topic.max,+panel.querySelector('.gcount').value||12));
+    const serie=panel.querySelector('.gserie').value.trim();
+    const st=settings();
+    const tasks=distinctTasks(()=>topic.gen(diff,st),n,t=>String(t.pdfQ||'')+'|'+String(t._v));
+    topic.pdf(tasks,serie,st,diff);
+  });
+  if(topic.extraPdf)panel.querySelector('.gextra').addEventListener('click',()=>{
+    topic.extraPdf.run(panel.querySelector('.gserie').value.trim(),settings(),diff);});
+}
+
+/* ============ Navigation ============ */
+function showView(id){$$('.view').forEach(v=>v.classList.toggle('active',v.id==='view-'+id));
+  $$('.navbtn').forEach(b=>b.classList.toggle('active',b.dataset.view===id));
+  $('#sidebar').classList.remove('open');window.scrollTo({top:0,behavior:'smooth'});}
+function wireTabs(){$$('.tabs').forEach(tabs=>{tabs.addEventListener('click',e=>{const b=e.target.closest('.tab');if(!b)return;
+  const wrap=tabs.parentElement;$$('.tab',tabs).forEach(t=>t.classList.toggle('active',t===b));
+  $$('.panel',wrap).forEach(p=>p.classList.toggle('active',p.dataset.panel===b.dataset.panel));});});}
+
+/* ============ PDF-Erzeugung (jsPDF) ============ */
+function asciiPDF(s){return String(s).replace(/≙/g,'=').replace(/→/g,'->').replace(/[–—−]/g,'-')
+  .replace(/[   ]/g,' ').replace(/’/g,"'");}
+function jspdfDoc(){if(!window.jspdf){alert('PDF-Bibliothek konnte nicht geladen werden. Bitte Internetverbindung prüfen und Seite neu laden.');return null;}
+  const jsPDF=window.jspdf.jsPDF;const doc=new jsPDF({unit:'mm',format:'a4'});const _t=doc.text.bind(doc);
+  doc.text=function(txt){var rest=[].slice.call(arguments,1);txt=Array.isArray(txt)?txt.map(asciiPDF):asciiPDF(txt);
+    return _t.apply(null,[txt].concat(rest));};return doc;}
+const M=18,PW=210,PH=297,CW=PW-2*M,BOTTOM=PH-14;
+const SUBJ='Kopfrechentraining',TAG='Grundaufgaben AB',TAGL='Grundaufgaben AB · Lösungen';
+function pdfHeader(doc,subject,rightTag){doc.setFont('times','normal');doc.setFontSize(10.5);doc.setTextColor(0,0,0);
+  doc.text('Mathematik',M,M);doc.setFont('times','italic');doc.text('«'+subject+'»',PW/2,M,{align:'center'});
+  doc.setFont('times','normal');doc.text(rightTag,PW-M,M,{align:'right'});
+  doc.setDrawColor(0,0,0);doc.setLineWidth(0.5);doc.line(M,M+2.5,PW-M,M+2.5);}
+function nameRow(doc,y){doc.setFont('times','normal');doc.setFontSize(10);doc.setTextColor(0,0,0);
+  doc.setDrawColor(120,120,120);doc.setLineWidth(0.3);
+  [['Name:',0,74],['Klasse:',80,36],['Datum:',122,52]].forEach(function(c){const x=M+c[1];doc.text(c[0],x,y);
+    doc.line(x+doc.getTextWidth(c[0])+2,y+1,M+c[1]+c[2],y+1);});
+  doc.setDrawColor(0,0,0);return y+3;}
+function titleBlock(doc,title,metaLines,opts){opts=opts||{};let y=M+13;doc.setFont('times','bold');doc.setFontSize(15);
+  doc.setTextColor(0,0,0);doc.text(title,PW/2,y,{align:'center'});y+=5;
+  doc.setFont('times','normal');doc.setFontSize(10);(metaLines||[]).filter(Boolean).forEach(l=>{doc.text(l,PW/2,y,{align:'center'});y+=4.6;});
+  y+=1.5;doc.setDrawColor(0,0,0);doc.setLineWidth(0.5);doc.line(M,y,PW-M,y);
+  if(opts.name)y=nameRow(doc,y+6);return y+6;}
+function ensureSpace(doc,y,need){if(y+need>PH-16){doc.addPage();return M+6;}return y;}
+function fnameBase(t){return String(t).replace(/ä/g,'ae').replace(/ö/g,'oe').replace(/ü/g,'ue')
+  .replace(/Ä/g,'Ae').replace(/Ö/g,'Oe').replace(/Ü/g,'Ue').replace(/ß/g,'ss')
+  .replace(/[^A-Za-z0-9]+/g,'_').replace(/^_|_$/g,'')||'Serie';}
+
+/* Spaltenblatt: kurze Kopfrechenaufgaben nebeneinander, wie auf einem
+   klassischen Kopfrechenblatt. Spaltenzahl richtet sich nach der Laenge
+   der laengsten Aufgabe; die Zeilenhoehe wird so gedehnt, dass die Seite
+   gefuellt ist (statt unten leer zu bleiben). */
+function buildKopfPDF(tasks,serie,cfg){
+  const doc=jspdfDoc();if(!doc)return;
+  const fs=12,rowMin=11,rowMax=20;
+  doc.setFont('times','normal');doc.setFontSize(fs);
+  let wMax=0;
+  tasks.forEach((t,i)=>{const w=doc.getTextWidth((i+1)+')  '+asciiPDF(t.pdfQ));if(w>wMax)wMax=w;});
+  let cols=Math.max(1,Math.min(cfg.maxCols||3,Math.floor(CW/(wMax+26))));
+  if(!isFinite(cols)||cols<1)cols=1;
+  const colW=CW/cols,lineW=Math.min(34,colW-wMax-6);
+  function rowsPlan(rowsTotal,firstAvail,contAvail){
+    const perFirst=Math.max(1,Math.floor(firstAvail/rowMin)),perCont=Math.max(1,Math.floor(contAvail/rowMin));
+    let pages=1;if(rowsTotal>perFirst)pages=1+Math.ceil((rowsTotal-perFirst)/perCont);
+    const per=Math.ceil(rowsTotal/pages),out=[];let done=0;
+    for(let p=0;p<pages&&done<rowsTotal;p++){const n=Math.min(per,rowsTotal-done);
+      out.push({rows:n,avail:p===0?firstAvail:contAvail});done+=n;}
+    return out;
+  }
+  function sheet(sol){
+    pdfHeader(doc,SUBJ,sol?TAGL:TAG);
+    let y=titleBlock(doc,(sol?'Lösungen · ':'')+cfg.title+(serie?' – '+serie:''),cfg.meta||[]);
+    doc.setFont('times','normal');doc.setFontSize(11);doc.setTextColor(0,0,0);
+    const il=doc.splitTextToSize(sol?'Lösungen zum Arbeitsblatt.':cfg.intro,CW);
+    doc.text(il,M,y);y+=il.length*5.4+6;
+    const rowsTotal=Math.ceil(tasks.length/cols);
+    const plan=rowsPlan(rowsTotal,BOTTOM-y,BOTTOM-(M+6));
+    let r0=0;
+    plan.forEach((pg,pi)=>{
+      if(pi>0){doc.addPage();pdfHeader(doc,SUBJ,sol?TAGL:TAG);y=M+6;}
+      const rowH=Math.max(rowMin,Math.min(rowMax,pg.avail/pg.rows));
+      for(let r=0;r<pg.rows;r++){
+        for(let c=0;c<cols;c++){
+          const i=(r0+r)*cols+c;if(i>=tasks.length)break;
+          const t=tasks[i],x=M+c*colW,yy=y+r*rowH;
+          doc.setFont('times','bold');doc.setFontSize(fs);doc.setTextColor(0,0,0);doc.text((i+1)+')',x,yy);
+          doc.setFont('times','normal');doc.text(asciiPDF(t.pdfQ),x+8,yy);
+          const lx=x+8+doc.getTextWidth(asciiPDF(t.pdfQ))+2;
+          if(sol){doc.setFont('courier','bold');doc.setFontSize(fs);doc.setTextColor(213,71,62);
+            doc.text(String(t._short||t.pdfSol||''),lx+1,yy);doc.setTextColor(0,0,0);doc.setFont('times','normal');}
+          else if(String(t.pdfQ).indexOf('____')<0){doc.setDrawColor(150,165,190);doc.setLineWidth(0.3);
+            doc.line(lx,yy+1,Math.min(lx+lineW,x+colW-6),yy+1);doc.setDrawColor(0,0,0);}
+        }
+      }
+      y+=pg.rows*rowH;r0+=pg.rows;
+    });
+  }
+  sheet(false);
+  doc.addPage();sheet(true);
+  doc.save(fnameBase(cfg.title)+'_'+fnameBase(serie||'Serie')+'.pdf');
+}
+/* Kettenblatt: eine Rechenkette pro Zeile, darunter Platz zum Rechnen.
+   Loesungsseite zeigt jeden Rechenschritt. */
+function buildKettePDF(tasks,serie,cfg){
+  const doc=jspdfDoc();if(!doc)return;
+  pdfHeader(doc,SUBJ,TAG);
+  let y=titleBlock(doc,cfg.title+(serie?' – '+serie:''),cfg.meta||[]);
+  doc.setFont('times','normal');doc.setFontSize(11);doc.setTextColor(0,0,0);
+  const il=doc.splitTextToSize(cfg.intro,CW);doc.text(il,M,y);y+=il.length*5.4+7;
+  const fs=12,rowMin=13,rowMax=24;
+  const rows=tasks.length;
+  const perFirst=Math.max(1,Math.floor((BOTTOM-y)/rowMin)),perCont=Math.max(1,Math.floor((BOTTOM-(M+6))/rowMin));
+  let pages=1;if(rows>perFirst)pages=1+Math.ceil((rows-perFirst)/perCont);
+  const per=Math.ceil(rows/pages);
+  let idx=0;
+  for(let p=0;p<pages&&idx<rows;p++){
+    if(p>0){doc.addPage();pdfHeader(doc,SUBJ,TAG);y=M+6;}
+    const n=Math.min(per,rows-idx),avail=(p===0?BOTTOM-y:BOTTOM-(M+6));
+    const rowH=Math.max(rowMin,Math.min(rowMax,avail/n));
+    for(let r=0;r<n;r++){
+      const t=tasks[idx+r],yy=y+r*rowH;
+      doc.setFont('times','bold');doc.setFontSize(fs);doc.setTextColor(0,0,0);doc.text((idx+r+1)+')',M,yy);
+      doc.setFont('times','normal');doc.text(asciiPDF(t.pdfQ),M+9,yy);
+      const lx=M+9+doc.getTextWidth(asciiPDF(t.pdfQ))+3;
+      doc.setDrawColor(150,165,190);doc.setLineWidth(0.3);doc.line(lx,yy+1,Math.min(lx+34,PW-M),yy+1);doc.setDrawColor(0,0,0);
+    }
+    y+=n*rowH;idx+=n;
+  }
+  doc.addPage();pdfHeader(doc,SUBJ,TAGL);
+  let y2=titleBlock(doc,'Lösungen · '+cfg.title+(serie?' – '+serie:''),cfg.meta||[]);
+  doc.setFontSize(11);
+  tasks.forEach((t,i)=>{
+    const sol=Array.isArray(t.pdfSol)?t.pdfSol:[String(t.pdfSol||'')];
+    y2=ensureSpace(doc,y2,9+sol.length*5.2);
+    doc.setFont('times','bold');doc.setFontSize(11);doc.setTextColor(0,0,0);doc.text((i+1)+')',M,y2);
+    doc.setFont('times','normal');doc.text(asciiPDF(t.pdfQ),M+9,y2);
+    let yy=y2+5.6;
+    doc.setFont('courier','normal');doc.setFontSize(10.5);doc.setTextColor(47,158,95);
+    sol.forEach((ln,k)=>{if(k===sol.length-1){doc.setTextColor(213,71,62);doc.setFont('courier','bold');}
+      doc.text(asciiPDF(String(ln)),M+12,yy);yy+=5.2;});
+    doc.setFont('times','normal');doc.setFontSize(11);doc.setTextColor(0,0,0);y2=yy+3.5;
+  });
+  doc.save(fnameBase(cfg.title)+'_'+fnameBase(serie||'Serie')+'.pdf');
+}
+/* Einmaleins-Tafel: leeres Gitter zum Ausfuellen + Loesungsgitter */
+function buildTafelPDF(serie,rowsFrom,rowsTo,colsTo,titleTxt,colFactor){
+  const doc=jspdfDoc();if(!doc)return;
+  const f=colFactor||1;
+  const cols=Array.from({length:colsTo},(_,i)=>(i+1)*f);
+  const rws=Array.from({length:rowsTo-rowsFrom+1},(_,i)=>rowsFrom+i);
+  function drawGrid(startY,fill){
+    const nC=cols.length+1,nR=rws.length+1;
+    const cell=Math.min(17,CW/nC,(BOTTOM-startY)/nR);
+    const gw=cell*nC,x0=M+(CW-gw)/2,y0=startY;
+    doc.setFillColor(235,238,238);doc.rect(x0,y0,gw,cell,'F');doc.rect(x0,y0,cell,nR*cell,'F');
+    doc.setDrawColor(0,0,0);doc.setLineWidth(0.3);
+    for(let i=0;i<=nR;i++)doc.line(x0,y0+i*cell,x0+gw,y0+i*cell);
+    for(let j=0;j<=nC;j++)doc.line(x0+j*cell,y0,x0+j*cell,y0+nR*cell);
+    doc.setFont('times','bold');doc.setFontSize(Math.max(7,cell*0.5));doc.setTextColor(0,0,0);
+    doc.text('·',x0+cell/2,y0+cell*0.66,{align:'center'});
+    cols.forEach((c,j)=>doc.text(String(c),x0+(j+1)*cell+cell/2,y0+cell*0.66,{align:'center'}));
+    rws.forEach((r,i)=>doc.text(String(r),x0+cell/2,y0+(i+1)*cell+cell*0.66,{align:'center'}));
+    if(fill){doc.setFont('times','normal');doc.setTextColor(20,120,80);
+      rws.forEach((r,i)=>cols.forEach((c,j)=>doc.text(String(r*c),x0+(j+1)*cell+cell/2,y0+(i+1)*cell+cell*0.66,{align:'center'})));
+      doc.setTextColor(0,0,0);}
+  }
+  pdfHeader(doc,SUBJ,TAG);
+  let y=titleBlock(doc,titleTxt+(serie?' – '+serie:''),['Reihen '+rowsFrom+' bis '+rowsTo]);
+  doc.setFont('times','normal');doc.setFontSize(11);
+  doc.text(doc.splitTextToSize('Fülle die Tafel aus: Multipliziere die Zahl links mit der Zahl oben.',CW),M,y);y+=9;
+  drawGrid(y,false);
+  doc.addPage();pdfHeader(doc,SUBJ,TAGL);
+  let y2=titleBlock(doc,'Lösung · '+titleTxt+(serie?' – '+serie:''),['Reihen '+rowsFrom+' bis '+rowsTo]);
+  drawGrid(y2,true);
+  doc.save(fnameBase(titleTxt)+'_'+fnameBase(serie||'Serie')+'.pdf');
+}
+
+/* ============ Themen-Registry ============ */
+const G1='Einmaleins',G2='Einmaleins mit Zehnern',G3='Kopfrechnen nach Sikore';
+const EM_MODE_CTL={key:'mode',label:'Modus',options:[
+  {v:'gemischt',label:'Gemischt'},{v:'mal',label:'Rechnen'},{v:'fehlend',label:'Fehlende Zahl'},{v:'division',label:'Division'}]};
+function listCtl(label,values,allLabel){return {key:'reihe',label:label,options:[{v:'all',label:allLabel||'Alle'}]
+  .concat(values.map(v=>({v:String(v),label:String(v)})))};}
+function rowCtl(from,to){return listCtl('Reihe',Array.from({length:to-from+1},(_,i)=>from+i));}
+const EM_MODES_PDF=[{v:'gemischt',t:'Gemischt'},{v:'mal',t:'Nur Rechnen (a · b)'},
+  {v:'fehlend',t:'Fehlende Zahl'},{v:'division',t:'Division (Umkehraufgabe)'}];
+const KETTE_CTL={key:'kette',label:'Kettenlänge',options:[
+  {v:'auto',label:'nach Stufe'},{v:'1',label:'Einzel'},{v:'2',label:'Kette 2'},{v:'3',label:'Kette 3'}]};
+const KETTE_MODES_PDF=[{v:'auto',t:'Nach Stufe'},{v:'1',t:'Einzelaufgaben'},
+  {v:'2',t:'Rechenketten mit 2 Schritten'},{v:'3',t:'Rechenketten mit 3 Schritten'}];
+
+const TOPICS=[
+ {key:'klein',group:G1,nav:'Kleines 1×1',title:'Kleines Einmaleins',
+  lead:'Reihen 1 bis 10.',
+  gen:genKlein,controls:[rowCtl(1,10),EM_MODE_CTL],modes:EM_MODES_PDF,
+  min:6,max:60,def:24,
+  pdf:(tasks,serie)=>buildKopfPDF(tasks,serie,{title:'Kleines Einmaleins',maxCols:3,
+    intro:'Löse die Aufgaben im Kopf. Schreibe nur das Ergebnis auf.',meta:['Thema: '+G1]}),
+  extraPdf:{label:'Einmaleins-Tafel (PDF)',run:(serie)=>buildTafelPDF(serie,1,10,10,'Einmaleins-Tafel')}},
+ {key:'gross',group:G1,nav:'Grosses 1×1',title:'Grosses Einmaleins',
+  lead:'Reihen 11 bis 20.',
+  gen:genGross,controls:[rowCtl(11,20),EM_MODE_CTL],modes:EM_MODES_PDF,
+  min:6,max:48,def:20,
+  pdf:(tasks,serie)=>buildKopfPDF(tasks,serie,{title:'Grosses Einmaleins',maxCols:3,
+    intro:'Löse die Aufgaben im Kopf. Zerlege die grosse Zahl, wenn es hilft.',meta:['Thema: '+G1]}),
+  extraPdf:{label:'Einmaleins-Tafel 11–20 (PDF)',run:(serie)=>buildTafelPDF(serie,11,20,10,'Einmaleins-Tafel 11 bis 20')}},
+ {key:'zehner1x1',group:G2,nav:'Zehner-1×1',title:'Zehnereinmaleins',
+  lead:'7 · 30, 9 · 40 – Kernaufgabe rechnen, Null anhängen.',
+  gen:genZehnerEins,controls:[listCtl('Zehnerzahl',ZEHNER),EM_MODE_CTL],modes:EM_MODES_PDF,
+  min:6,max:48,def:20,
+  pdf:(tasks,serie)=>buildKopfPDF(tasks,serie,{title:'Zehnereinmaleins',maxCols:3,
+    intro:'Löse die Aufgaben im Kopf: Kernaufgabe rechnen, dann die Nullen anhängen.',meta:['Thema: '+G2]}),
+  extraPdf:{label:'Zehner-Tafel (PDF)',run:(serie)=>buildTafelPDF(serie,2,9,9,'Zehnereinmaleins-Tafel',10)}},
+ {key:'grosszehner',group:G2,nav:'Grosses 1×1 · Zehner',title:'Grosses Einmaleins mit Zehnern',
+  lead:'12 · 50, 17 · 70 – zerlegen und Null anhängen.',
+  gen:genGrossZehner,controls:[rowCtl(11,20),EM_MODE_CTL],modes:EM_MODES_PDF,
+  min:6,max:48,def:20,
+  pdf:(tasks,serie)=>buildKopfPDF(tasks,serie,{title:'Grosses Einmaleins mit Zehnern',maxCols:3,
+    intro:'Löse die Aufgaben im Kopf: zuerst die Kernaufgabe, dann die Null anhängen.',meta:['Thema: '+G2]}),
+  extraPdf:{label:'Zehner-Tafel 11–20 (PDF)',run:(serie)=>buildTafelPDF(serie,11,20,9,'Zehnereinmaleins-Tafel 11 bis 20',10)}}
+];
+KLEVEL_IDS.forEach(function(l){
+  TOPICS.push({key:'lvl'+l,group:G3,nav:'Sikore '+l,title:'Sikore '+l,level:l,
+    lead:kLong(l),
+    gen:(d,st)=>genLevel(l,d,st),controls:[KETTE_CTL],modes:KETTE_MODES_PDF,
+    min:6,max:48,def:20,
+    pdf:function(tasks,serie){
+      const kette=tasks.some(t=>(t._steps||1)>1);
+      const meta=['Sikore '+l+' · '+kLong(l)];
+      if(kette)buildKettePDF(tasks,serie,{title:'Kopfrechnen · Sikore '+l,meta:meta,
+        intro:'Rechne jede Kette Schritt für Schritt von links nach rechts. Nur das Endergebnis aufschreiben.'});
+      else buildKopfPDF(tasks,serie,{title:'Kopfrechnen · Sikore '+l,maxCols:3,meta:meta,
+        intro:'Löse die Aufgaben im Kopf. Schreibe nur das Ergebnis auf.'});
+    }});
+});
+
+/* ============ Aufbau: Home, Views, Sidebar ============ */
+const GROUPS=[G1,G2,G3];
+function buildHome(){
+  const groups=GROUPS.map(function(g){
+    const cards=TOPICS.filter(t=>t.group===g).map(function(t){
+      return '<button class="card-topic" data-view="'+t.key+'" style="--accent:#0A7C8A">'+
+        '<span class="k">'+t.nav+'</span>'+
+        '<span class="d">'+t.lead+'</span>'+
+        '<span class="go" style="color:#005F6A">Öffnen →</span>'+
+      '</button>';
+    }).join('');
+    return '<div class="eyebrow" style="margin:30px 0 12px;color:#005F6A">'+g+'</div><div class="cards">'+cards+'</div>';
+  }).join('');
+  return '<section class="view active" id="view-home">'+
+    '<div class="hero">'+
+      '<div class="eyebrow">Mathematik · Lernlandschaft</div>'+
+      '<h2 class="title">Kopfrechen<span class="topic-tag">training</span></h2>'+
+      '<p class="lead">Einmaleins, Zehnereinmaleins und Kopfrechnen nach Sikore. Üben mit sofortiger Rückmeldung, '+
+      'Blitzrunde über 60 Sekunden, Arbeitsblatt als PDF.</p>'+
+    '</div>'+
+    groups+
+    '<div class="sheet" style="margin-top:30px">'+
+      '<p style="color:var(--ink-soft);margin:0;max-width:70ch"><b>Theorie</b> – kurze Rechenwege. '+
+      '<b>Üben</b> – Aufgaben mit sofortiger Kontrolle, dazu die Blitzrunde über 60 Sekunden. '+
+      '<b>Arbeitsblatt erstellen</b> – PDF mit separaten Lösungen.</p></div>'+
+  '</section>';
+}
+function buildTopicView(t){
+  return '<section class="view" id="view-'+t.key+'">'+
+    '<div class="eyebrow">Mathematik <span class="topic-tag">«Kopfrechentraining»</span> · '+t.group+'</div>'+
+    '<h2 class="title">'+t.title+'</h2>'+
+    '<p class="lead">'+t.lead+'</p>'+
+    '<div class="tabs" data-tabs="'+t.key+'"><button class="tab active" data-panel="theorie">Theorie</button>'+
+      '<button class="tab" data-panel="uebn">Üben</button>'+
+      '<button class="tab" data-panel="gen">Arbeitsblatt erstellen</button></div>'+
+    '<div class="panel active" data-panel="theorie" id="'+t.key+'-theorie"><div class="sheet"><div class="theorie">'+theorieFor(t)+'</div></div></div>'+
+    '<div class="panel" data-panel="uebn" id="'+t.key+'-uebn"></div>'+
+    '<div class="panel" data-panel="gen" id="'+t.key+'-gen"></div>'+
+  '</section>';
+}
+function tafelHTML(from,to,cols,f){
+  f=f||1;
+  let h='<div class="tafelwrap"><table class="tafel"><tr><th>·</th>';
+  for(let c=1;c<=cols;c++)h+='<th>'+(c*f)+'</th>';
+  h+='</tr>';
+  for(let r=from;r<=to;r++){h+='<tr><th>'+r+'</th>';for(let c=1;c<=cols;c++)h+='<td>'+(r*c*f)+'</td>';h+='</tr>';}
+  return h+'</table></div>';
+}
+function theorieFor(t){
+  if(t.key==='klein')return '<div class="merke"><b>Tauschaufgabe:</b> 7 · 8 = 8 · 7 – damit musst du nur die Hälfte lernen.</div>'+
+    '<div class="bsp"><span class="lbl">Aus den Kernaufgaben ableiten</span>'+
+    '7 · 6 = 7 · 5 + 7 = 35 + 7 = 42<br>9 · 8 = 10 · 8 − 8 = 80 − 8 = 72</div>'+
+    '<div class="merke"><b>Umkehraufgabe:</b> 6 · 7 = 42 → 42 : 7 = 6 und 42 : 6 = 7.</div>'+
+    tafelHTML(1,10,10,1);
+  if(t.key==='gross')return '<div class="merke"><b>Zerlegen:</b> 13 · 6 = 10 · 6 + 3 · 6 = 60 + 18 = 78.</div>'+
+    '<div class="bsp"><span class="lbl">Weitere Wege</span>19 · 7 = 20 · 7 − 7 = 133<br>'+
+    '15 · 14 = 15 · 10 + 15 · 4 = 210<br>18 · 5 = 9 · 10 = 90</div>'+
+    tafelHTML(11,20,10,1);
+  if(t.key==='zehner1x1')return '<div class="merke"><b>Null-Trick:</b> Kernaufgabe rechnen, dann die Nullen anhängen.</div>'+
+    '<div class="bsp">7 · 30 → 7 · 3 = 21 → <b>210</b><br>9 · 40 → 9 · 4 = 36 → <b>360</b><br>'+
+    '30 · 40 → 3 · 4 = 12 → <b>1200</b> (zwei Nullen)</div>'+
+    '<div class="merke"><b>Umkehraufgabe:</b> 360 : 40 = 9.</div>'+
+    tafelHTML(2,9,9,10);
+  if(t.key==='grosszehner')return '<div class="merke"><b>Zuerst zerlegen, dann die Null anhängen.</b></div>'+
+    '<div class="bsp">12 · 50 → 12 · 5 = 60 → <b>600</b><br>17 · 70 → 17 · 7 = 119 → <b>1190</b><br>'+
+    '<span class="lbl" style="margin-top:6px">17 · 7 zerlegt</span>10 · 7 + 7 · 7 = 70 + 49 = 119</div>'+
+    tafelHTML(11,20,9,10);
+  const l=t.level,c=KLEVELS[l];
+  return '<div class="bsp"><span class="lbl">Sikore '+l+'</span>Zahlenraum bis '+c.max+'<br>Plus und Minus bis '+c.add+
+    '<br>Mal und Geteilt bis '+c.mul+'</div>'+
+    '<div class="merke"><b>Rechenkette:</b> Schritt für Schritt von links nach rechts – der Pfeil zeigt, was als Nächstes '+
+    'mit dem Zwischenergebnis passiert. Punkt vor Strich gilt hier nicht.</div>'+
+    '<div class="bsp"><span class="lbl">Beispiel</span>457 → − 451 → 6 → · 14 → <b>84</b></div>'+
+    '<h4>Strategien</h4><ul>'+
+    '<li><b>Zerlegen:</b> 348 + 176 = 348 + 100 + 70 + 6</li>'+
+    '<li><b>Zum Zehner ergänzen:</b> 397 + 48 = 400 + 48 − 3</li>'+
+    '<li><b>Mal 10, 20, 30:</b> 14 · 20 = 14 · 2 · 10 = 280</li>'+
+    '<li><b>Halbieren und verdoppeln:</b> 24 · 15 = 12 · 30 = 360</li></ul>'+
+    '<div class="merke"><b>Tipp:</b> Fünf Minuten pro Tag – zum Beispiel eine Blitzrunde – wirken besser als selten und lang.</div>';
+}
+function buildNav(){
+  let html='<div class="nav-label">Start</div><button class="navbtn active" data-view="home"><span class="ico">▦</span> Übersicht</button>';
+  GROUPS.forEach(g=>{html+='<div class="nav-label">'+g+'</div>';
+    TOPICS.filter(t=>t.group===g).forEach(t=>{html+='<button class="navbtn" data-view="'+t.key+'"><span class="ico">›</span> '+t.nav+'</button>';});});
+  html+='<div class="nav-label">Test</div><button class="navbtn" data-view="test"><span class="ico">✎</span> Kopfrechen-Test</button>';
+  return html;
+}
+
+/* ===== Kopfrechen-Test (themenintern gemischt) ===== */
+function buildTestView(){
+  const groups=GROUPS.map(function(g){
+    const boxes=TOPICS.filter(t=>t.group===g).map(t=>'<label><input type="checkbox" class="tx-topic" value="'+t.key+'" '+(g===G1?'checked':'')+'> '+t.nav+'</label>').join('');
+    return '<div class="grp-title">'+g+'</div><div class="checks">'+boxes+'</div>';
+  }).join('');
+  return '<section class="view" id="view-test">'+
+   '<div class="eyebrow">Mathematik <span class="topic-tag">«Kopfrechentraining»</span> · Test</div>'+
+   '<h2 class="title">Kopfrechen-Test</h2>'+
+   '<p class="lead">Bereiche wählen, Schwierigkeit und Anzahl festlegen – als gemischte Serie oder als Arbeitsblatt.</p>'+
+   '<div class="sheet exam-setup">'+
+     '<div class="row"><b>Bereiche</b><span style="flex:1"></span><button class="btn btn-ghost" id="tx-all">Alle</button><button class="btn btn-ghost" id="tx-none">Keine</button></div>'+
+     groups+
+     '<div class="row"><span class="gen-note">Schwierigkeit:</span><span class="pill-diff" id="tx-diff"><button data-d="1" class="active">leicht</button><button data-d="2">mittel</button><button data-d="3">schwer</button></span>'+
+       '<span class="gen-note" style="margin-left:8px">Anzahl Aufgaben:</span><input class="opt" id="tx-count" type="number" min="6" max="60" value="20" style="width:84px"></div>'+
+     '<div class="gen-actions"><button class="btn btn-primary" id="tx-start">Test starten</button>'+
+       '<button class="btn btn-ghost" id="tx-pdf">Als Arbeitsblatt (PDF)</button><span class="gen-note" id="tx-hint"></span></div>'+
+   '</div>'+
+   '<div id="tx-run" style="margin-top:18px"></div>'+
+  '</section>';
+}
+function wireTest(){
+  const root=$('#view-test');if(!root)return;
+  let diff=1;
+  const sel=()=>$$('.tx-topic',root).filter(c=>c.checked).map(c=>c.value);
+  const count=()=>Math.max(6,Math.min(60,+root.querySelector('#tx-count').value||20));
+  root.querySelector('#tx-all').addEventListener('click',()=>$$('.tx-topic',root).forEach(c=>c.checked=true));
+  root.querySelector('#tx-none').addEventListener('click',()=>$$('.tx-topic',root).forEach(c=>c.checked=false));
+  root.querySelector('#tx-diff').addEventListener('click',e=>{const b=e.target.closest('button');if(!b)return;diff=+b.dataset.d;
+    $$('#tx-diff button',root).forEach(x=>x.classList.toggle('active',x===b));});
+  function selected(){const k=sel();return TOPICS.filter(t=>k.indexOf(t.key)>=0);}
+  root.querySelector('#tx-start').addEventListener('click',()=>{
+    const st=selected();
+    if(!st.length){root.querySelector('#tx-hint').textContent='Bitte mindestens einen Bereich wählen.';return;}
+    root.querySelector('#tx-hint').textContent='';
+    mountKopf($('#tx-run'),{key:'test',title:'Kopfrechen-Test',nav:'Test',
+      gen:(d,s)=>pick(st).gen(d,s),controls:[]});
+    $('#tx-run').scrollIntoView({behavior:'smooth',block:'start'});
+  });
+  root.querySelector('#tx-pdf').addEventListener('click',()=>{
+    const st=selected();
+    if(!st.length){root.querySelector('#tx-hint').textContent='Bitte mindestens einen Bereich wählen.';return;}
+    root.querySelector('#tx-hint').textContent='';
+    const tasks=distinctTasks(()=>pick(st).gen(diff,{}),count(),t=>String(t.pdfQ||'')+'|'+String(t._v));
+    const DL={1:'leicht',2:'mittel',3:'schwer'};
+    const meta=['Kopfrechen-Test · '+DL[diff]+' · '+st.length+' Bereiche'];
+    if(tasks.some(t=>(t._steps||1)>1))
+      buildKettePDF(tasks,'',{title:'Kopfrechen-Test',meta:meta,
+        intro:'Löse die Aufgaben im Kopf. Rechenketten Schritt für Schritt von links nach rechts rechnen.'});
+    else
+      buildKopfPDF(tasks,'',{title:'Kopfrechen-Test',maxCols:3,meta:meta,
+        intro:'Löse die Aufgaben im Kopf. Schreibe nur das Ergebnis auf.'});
+  });
+}
+
+function init(){
+  $('#nav').innerHTML=buildNav();
+  $('#main').innerHTML=buildHome()+TOPICS.map(buildTopicView).join('')+buildTestView();
+  $$('[data-view]').forEach(b=>b.addEventListener('click',()=>showView(b.dataset.view)));
+  $('#menuToggle').addEventListener('click',()=>$('#sidebar').classList.toggle('open'));
+  wireTabs();
+  TOPICS.forEach(t=>{mountKopf($('#'+t.key+'-uebn'),t);mountGenerator($('#'+t.key+'-gen'),t);});
+  wireTest();
+}
+init();
+</script>
+</body>
+</html>
