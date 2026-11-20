@@ -1129,6 +1129,32 @@ input.flash-no{border-color:var(--red)!important;background:var(--red-soft)}
 .tafel th{background:var(--paper-deep);color:var(--brand);font-weight:700}
 .theorie .merke b{color:var(--brand)}
 @media(max-width:820px){.ctl-row{gap:10px}.kette{font-size:17px}}
+  .lz-list{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:8px}
+  .lz-list li{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap;
+    padding:9px 4px;border-bottom:1px solid var(--line)}
+  .lz-list li:last-child{border-bottom:none}
+  .lz-list label{display:flex;align-items:center;gap:10px;cursor:pointer;flex:1;min-width:220px}
+  .lz-list input{width:18px;height:18px;accent-color:var(--brand)}
+  .lz-links{display:flex;gap:8px;flex-wrap:wrap}
+  .lz-link{display:inline-flex;align-items:center;gap:6px}
+  .lz-tag{font-size:11.5px;color:var(--ink-soft)}
+  .lz-go{border:1px solid var(--line-2);background:var(--card-2);color:var(--brand);font-weight:600;
+    font-size:13px;padding:5px 12px;border-radius:8px;cursor:pointer}
+  .lz-go:hover{background:var(--mint-soft);border-color:var(--mint)}
+  .lnk-inline{border:none;background:none;color:var(--brand);font-weight:600;cursor:pointer;
+    font-family:inherit;font-size:inherit;padding:0;text-decoration:underline}
+  .nav-row{display:flex;align-items:center;gap:2px}
+  .nav-row .nav-label-btn{flex:1;text-align:left;border:none;background:none;cursor:pointer;
+    font-family:inherit;color:var(--ink-soft);text-transform:uppercase;letter-spacing:.06em;
+    font-size:12.5px;font-weight:700;padding:14px 4px 6px}
+  .nav-row .nav-label-btn.active{color:var(--brand)}
+  .nav-chevron{border:none;background:none;cursor:pointer;color:var(--ink-soft);font-size:13px;
+    padding:6px 8px;transition:transform .15s}
+  .nav-chevron.open{transform:rotate(90deg)}
+  .nav-sub{display:none;flex-direction:column}
+  .nav-sub.open{display:flex}
+  .navbtn-sub{padding-left:30px!important;font-size:13.5px!important;opacity:.88}
+  .navbtn-sub.active{opacity:1}
 </style>
 </head>
 <body>
@@ -1185,9 +1211,9 @@ function distinctTasks(gen,n,keyFn){
    Grosses 1x1  : Reihen 11-20
    Modi: mal (Produkt), fehlend (fehlender Faktor), division (Umkehraufgabe), gemischt
    Stufe steuert, WELCHE Faktoren gezogen werden:
-     leicht = Kernaufgaben (1, 2, 5, 10) bzw. kleine Partnerzahlen
-     mittel = ganzer Bereich
-     schwer = nur die "harten" Kombinationen (keine 1, 2, 5, 10 als Partner)
+     Grundanforderungen = Kernaufgaben (1, 2, 5, 10) bzw. kleine Partnerzahlen
+     Erweitert = ganzer Bereich
+     Anspruchsvoll = nur die "harten" Kombinationen (keine 1, 2, 5, 10 als Partner)
 ============================================================ */
 const EM_MODES=['mal','fehlend','division'];
 function emPartner(diff,lo,hi){
@@ -1292,6 +1318,7 @@ const KLEVELS={
   20:{max:2000,add:1000,mul:30}
 };
 const KLEVEL_IDS=[12,13,15,16,17,19,20];
+
 function kShort(l){const c=KLEVELS[l];return 'Sikore '+l+' · bis '+c.max;}
 function kLong(l){const c=KLEVELS[l];return 'Bis '+c.max+' · Plus/Minus bis '+c.add+' · Mal/Geteilt bis '+c.mul+'.';}
 function kRound(n,diff,hi){
@@ -1441,7 +1468,7 @@ var EXAM_API=(function(){
    zusaetzlich _dragSort:true und _items:[{disp,val},...] – siehe renderOrdn().
 ============================================================================ */
 var LK=(function(){
-  var DL={1:'leicht',2:'mittel',3:'schwer'};
+  var DL={1:'Grundanforderungen',2:'Erweitert',3:'Anspruchsvoll'};
   var ORDNCOL=['#2f6690','#a9431e','#1e7454','#7d4a9e','#b5731b'];
   function esc(s){return String(s==null?'':s).replace(/[&<>"]/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c];});}
   function plain(h){return String(h||'').replace(/<br\s*\/?>/g,' ').replace(/<sup>/g,'^').replace(/<\/sup>/g,'')
@@ -1596,7 +1623,7 @@ var LK=(function(){
         '<button class="lk-btn lk-gho" data-a="all">Alle</button><button class="lk-btn lk-gho" data-a="none">Keine</button></div>'+
       groupsHTML+
       '<div class="lk-row"><span class="lk-lab">Schwierigkeit:</span><span class="lk-pill lk-diff">'+
-        '<button data-d="1" class="on">leicht</button><button data-d="2">mittel</button><button data-d="3">schwer</button></span>'+
+        '<button data-d="1" class="on">Grundanforderungen</button><button data-d="2">Erweitert</button><button data-d="3">Anspruchsvoll</button></span>'+
         '<span class="lk-lab" style="margin-left:8px">Anzahl Aufgaben:</span>'+
         '<input class="lk-in lk-count" type="number" min="'+cfg.min+'" max="'+cfg.max+'" value="'+cfg.def+'" style="width:84px" aria-label="Anzahl Aufgaben">'+
         '<span class="lk-lab" style="margin-left:8px">Name:</span>'+
@@ -2047,9 +2074,9 @@ function protoEsc(s){return String(s).replace(/[&<>"]/g,function(c){return {'&':
 function newDiffAgg(){return {1:{ok:0,n:0},2:{ok:0,n:0},3:{ok:0,n:0}};}
 function aggRecord(agg,diff,ok){if(!agg[diff])agg[diff]={ok:0,n:0};agg[diff].n++;if(ok)agg[diff].ok++;}
 function protoBar(p){return '<span class="pbar"><span class="pbar-fill" style="width:'+p+'%;background:'+(p>=70?'#2f9e5f':(p>=50?'#e6a23c':'#d5473e'))+'"></span></span>';}
-function protoDiffTable(byDiff){if(!byDiff)return '';var labs={1:'leicht (Basis)',2:'mittel',3:'schwer'},rows='',any=false;[1,2,3].forEach(function(d){var o=byDiff[d];if(o&&o.n){any=true;var p=Math.round(o.ok/o.n*100);rows+='<tr><td>'+labs[d]+'</td><td>'+o.ok+' / '+o.n+'</td><td>'+p+' %</td><td>'+protoBar(p)+'</td></tr>';}});return any?('<h3>Nach Schwierigkeit</h3><table class="proto-tbl"><thead><tr><th>Stufe</th><th>Richtig</th><th>Quote</th><th></th></tr></thead><tbody>'+rows+'</tbody></table>'):'';}
+function protoDiffTable(byDiff){if(!byDiff)return '';var labs={1:'Grundanforderungen',2:'Erweitert',3:'Anspruchsvoll'},rows='',any=false;[1,2,3].forEach(function(d){var o=byDiff[d];if(o&&o.n){any=true;var p=Math.round(o.ok/o.n*100);rows+='<tr><td>'+labs[d]+'</td><td>'+o.ok+' / '+o.n+'</td><td>'+p+' %</td><td>'+protoBar(p)+'</td></tr>';}});return any?('<h3>Nach Schwierigkeit</h3><table class="proto-tbl"><thead><tr><th>Stufe</th><th>Richtig</th><th>Quote</th><th></th></tr></thead><tbody>'+rows+'</tbody></table>'):'';}
 function protoAssess(pct){if(pct>=90)return['sicher beherrscht','#1f7a45','#e9f7ef'];if(pct>=70)return['grösstenteils sicher','#846516','#f6efd8'];if(pct>=50)return['noch unsicher','#a9631b','#fbeede'];return['noch nicht sicher','#b23c30','#fdeeec'];}
-function protoAssessText(pct,byDiff){var base;if(pct>=90)base='Das Kopfrechnen sitzt sicher.';else if(pct>=70)base='Das Kopfrechnen ist grösstenteils sicher; einzelne Fehler sollten noch angeschaut werden.';else if(pct>=50)base='Die Grundlagen sind vorhanden, das Tempo und die Sicherheit fehlen noch – täglich kurz weiterüben.';else base='Die Grundlagen sind noch nicht automatisiert – zuerst das kleine Einmaleins festigen.';var weak='';if(byDiff){var worst=null,labs={1:'leicht',2:'mittel',3:'schwer'};[1,2,3].forEach(function(dn){var o=byDiff[dn];if(o&&o.n>=2){var p=o.ok/o.n;if(worst===null||p<worst.p)worst={d:dn,p:p};}});if(worst&&worst.p<0.7)weak=' Besondere Schwierigkeiten zeigen sich bei den Aufgaben der Stufe «'+labs[worst.d]+'».';}return base+weak;}
+function protoAssessText(pct,byDiff){var base;if(pct>=90)base='Das Kopfrechnen sitzt sicher.';else if(pct>=70)base='Das Kopfrechnen ist grösstenteils sicher; einzelne Fehler sollten noch angeschaut werden.';else if(pct>=50)base='Die Grundlagen sind vorhanden, das Tempo und die Sicherheit fehlen noch – täglich kurz weiterüben.';else base='Die Grundlagen sind noch nicht automatisiert – zuerst das kleine Einmaleins festigen.';var weak='';if(byDiff){var worst=null,labs={1:'Grundanforderungen',2:'Erweitert',3:'Anspruchsvoll'};[1,2,3].forEach(function(dn){var o=byDiff[dn];if(o&&o.n>=2){var p=o.ok/o.n;if(worst===null||p<worst.p)worst={d:dn,p:p};}});if(worst&&worst.p<0.7)weak=' Besondere Schwierigkeiten zeigen sich bei den Aufgaben der Stufe «'+labs[worst.d]+'».';}return base+weak;}
 function ensureProtoOverlay(){var ov=document.getElementById('protoOverlay');if(ov)return ov;ov=document.createElement('div');ov.className='proto-overlay';ov.id='protoOverlay';ov.hidden=true;ov.innerHTML='<div class="proto-card"><div class="proto-actions no-print"><button class="btn btn-primary" id="protoPrint">Drucken / als PDF speichern</button><button class="btn btn-ghost" id="protoClose">Schliessen</button></div><div id="protoBody"></div></div>';document.body.appendChild(ov);ov.querySelector('#protoPrint').addEventListener('click',function(){window.print();});ov.querySelector('#protoClose').addEventListener('click',function(){ov.hidden=true;});ov.addEventListener('click',function(e){if(e.target===ov)ov.hidden=true;});return ov;}
 function showProtocol(d){
   try{if(window.LVHOOK)window.LVHOOK.serie(String(d.tool||"uebung"),String(d.tool||""),d.correct|0,d.total|0);}catch(_e){}
@@ -2074,7 +2101,7 @@ function mountKopf(panel,topic){
    '<div class="sheet">'+
     '<div class="sheet-head">'+
       '<div class="scoreline"><span>Richtig: <b class="p-ok">0</b></span><span>Falsch: <b class="p-no">0</b></span><span class="streak p-streak">Serie: 0 🔥</span></div>'+
-      '<div class="p-controls"><span class="ctl"><span class="gen-note">Stufe:</span><span class="pill-diff p-diff"><button data-d="1" class="active">leicht</button><button data-d="2">mittel</button><button data-d="3">schwer</button></span></span></div>'+
+      '<div class="p-controls"><span class="ctl"><span class="gen-note">Stufe:</span><span class="pill-diff p-diff"><button data-d="1" class="active">Grundanforderungen</button><button data-d="2">Erweitert</button><button data-d="3">Anspruchsvoll</button></span></span></div>'+
     '</div>'+
     (ctlHTML?'<div class="ctl-row">'+ctlHTML+'</div>':'')+
     '<div class="blitzhud p-bh" hidden><span>⏱ <b class="p-time">'+BLITZ_SECONDS+'</b> s</span><span>Richtig: <b class="p-bok">0</b></span><span>Falsch: <b class="p-bno">0</b></span></div>'+
@@ -2199,7 +2226,7 @@ function mountGenerator(panel,topic){
       '<div class="field"><label>Serie / Bezeichnung</label><input class="opt gserie" value="Serie 1">'+
         '<label style="margin-top:8px">Anzahl Aufgaben</label><input class="opt gcount" type="number" min="'+topic.min+'" max="'+topic.max+'" value="'+(topic.def||12)+'">'+
         rowsHTML+'</div>'+
-      '<div class="field"><label>Schwierigkeit</label><span class="pill-diff gdiff"><button data-d="1" class="active">leicht</button><button data-d="2">mittel</button><button data-d="3">schwer</button></span>'+
+      '<div class="field"><label>Schwierigkeit</label><span class="pill-diff gdiff"><button data-d="1" class="active">Grundanforderungen</button><button data-d="2">Erweitert</button><button data-d="3">Anspruchsvoll</button></span>'+
         modesHTML+
         '<p class="hint" style="margin-top:10px">Aufgaben und Lösungen im Stil der Grundaufgaben-Arbeitsblätter.</p></div>'+
     '</div>'+
@@ -2228,7 +2255,9 @@ function mountGenerator(panel,topic){
 
 /* ============ Navigation ============ */
 function showView(id){$$('.view').forEach(v=>v.classList.toggle('active',v.id==='view-'+id));
-  $$('.navbtn').forEach(b=>b.classList.toggle('active',b.dataset.view===id));
+  $$('.navbtn,.nav-label-btn').forEach(b=>b.classList.toggle('active',b.dataset.view===id));
+  if(id==='home'){setNavGroup(null,false);}
+  else{const gk=(id.indexOf('grp-')===0)?id:(typeof TOPIC_GROUP_SLUG!=='undefined'?TOPIC_GROUP_SLUG[id]:undefined);if(gk)setNavGroup(gk,true);}
   $('#sidebar').classList.remove('open');window.scrollTo({top:0,behavior:'smooth'});}
 function wireTabs(){$$('.tabs').forEach(tabs=>{tabs.addEventListener('click',e=>{const b=e.target.closest('.tab');if(!b)return;
   const wrap=tabs.parentElement;$$('.tab',tabs).forEach(t=>t.classList.toggle('active',t===b));
@@ -2452,33 +2481,107 @@ KLEVEL_IDS.forEach(function(l){
 
 /* ============ Aufbau: Home, Views, Sidebar ============ */
 const GROUPS=[G1,G2,G3];
+function slug(str){return str.toLowerCase().replace(/[äöüß]/g,function(c){return {'ä':'ae','ö':'oe','ü':'ue','ß':'ss'}[c];}).replace(/[^a-z0-9]+/g,'-').replace(/^-+|-+$/g,'');}
+function grpView(g){return 'grp-'+slug(g);}
+const TOPIC_PALETTE=['#0A7C8A','#176E8C','#1E8763','#3C7A8F','#0F6B52','#2B8F5A'];
+function topicAccent(key){const t=TOPICS.filter(function(x){return x.key===key;})[0];if(!t)return '#0A7C8A';
+  const sameGroup=TOPICS.filter(function(x){return x.group===t.group;});return TOPIC_PALETTE[sameGroup.indexOf(t)%TOPIC_PALETTE.length];}
+const LZ1=[{k:['klein'],t:'Ich kenne das kleine Einmaleins (1×1 bis 10×10) sicher, auch als Umkehraufgabe (Division).'},
+  {k:['gross'],t:'Ich kann das grosse Einmaleins (Reihen 11–20) über Zerlegen herleiten.'}];
+const LZ2=[{k:['zehner1x1'],t:'Ich kann mit dem Null-Trick im Zehnereinmaleins rechnen (z. B. 7 · 30).'},
+  {k:['grosszehner'],t:'Ich kann das grosse Einmaleins mit Zehnern zerlegen und die Null anhängen (z. B. 17 · 70).'}];
+const LZ3=[{k:['lvl12','lvl13'],t:'Ich kann Rechenketten im Zahlenraum bis 500 sicher lösen.'},
+  {k:['lvl15','lvl16','lvl17'],t:'Ich kann Rechenketten im Zahlenraum bis 1000 sicher lösen.'},
+  {k:['lvl19','lvl20'],t:'Ich kann Rechenketten im Zahlenraum bis 2000 sicher lösen.'}];
+const LZBYGROUP={};LZBYGROUP[G1]=LZ1;LZBYGROUP[G2]=LZ2;LZBYGROUP[G3]=LZ3;
+const GROUP_BLURB={};
+GROUP_BLURB[G1]='Kleines und grosses Einmaleins, inkl. Umkehraufgaben';
+GROUP_BLURB[G2]='Zehnereinmaleins mit dem Null-Trick';
+GROUP_BLURB[G3]='Rechenketten in wachsenden Zahlenräumen (Sikore 12\u201320)';
+const TOPIC_GROUP_SLUG={};TOPICS.forEach(function(t){TOPIC_GROUP_SLUG[t.key]=grpView(t.group);});
+function lzItemHTML(item){
+  const multi=item.k.length>1;
+  const links=item.k.map(function(key){
+    const top=TOPICS.filter(function(x){return x.key===key;})[0];
+    if(!top)return '';
+    const tag=multi?('<span class="lz-tag">'+top.nav+'</span>'):'';
+    return '<span class="lz-link">'+tag+'<button class="lz-go" data-practice="'+key+'">Üben</button></span>';
+  }).join('');
+  return '<li><label><input type="checkbox"><span>'+item.t+'</span></label><div class="lz-links">'+links+'</div></li>';
+}
+function lzSheet(g){
+  const items=LZBYGROUP[g]||[];
+  return '<div class="sheet" style="margin:4px 0 20px"><div class="eyebrow">Was muss ich können?</div>'+
+    '<h3 style="font-family:var(--serif);margin:.3em 0 .5em;font-size:22px">Lernziele · '+g+'</h3>'+
+    '<ul class="lz-list">'+items.map(lzItemHTML).join('')+'</ul>'+
+    '<p class="hint" style="margin:12px 0 0">Hake ab, was du schon kannst.</p></div>';
+}
 function buildHome(){
-  const groups=GROUPS.map(function(g){
-    const cards=TOPICS.filter(t=>t.group===g).map(function(t){
-      return '<button class="card-topic" data-view="'+t.key+'" style="--accent:#0A7C8A">'+
-        '<span class="k">'+t.nav+'</span>'+
-        '<span class="d">'+t.lead+'</span>'+
-        '<span class="go" style="color:#005F6A">Öffnen →</span>'+
-      '</button>';
-    }).join('');
-    return '<div class="eyebrow" style="margin:30px 0 12px;color:#005F6A">'+g+'</div><div class="cards">'+cards+'</div>';
+  const groupCards=GROUPS.map(function(g){
+    const n=TOPICS.filter(function(t){return t.group===g;}).length;
+    return '<button class="card-topic" data-view="'+grpView(g)+'" style="--accent:#0A7C8A">'+
+      '<span class="k">'+g+'</span>'+
+      '<span class="d">'+(GROUP_BLURB[g]||(n+' Übungen'))+'</span>'+
+      '<span class="go" style="color:#005F6A">Öffnen →</span>'+
+    '</button>';
   }).join('');
   return '<section class="view active" id="view-home">'+
     '<div class="hero">'+
       '<div class="eyebrow">Mathematik · Lernlandschaft</div>'+
       '<h2 class="title">Kopfrechen<span class="topic-tag">training</span></h2>'+
-      '<p class="lead">Einmaleins, Zehnereinmaleins und Kopfrechnen nach Sikore. Üben mit sofortiger Rückmeldung, '+
-      'Blitzrunde über 60 Sekunden, Arbeitsblatt als PDF.</p>'+
+      '<p class="lead">Einmaleins, Zehnereinmaleins und Kopfrechnen nach Sikore. '+
+      '<button class="lnk-inline" data-view="anleitung">So funktioniert\'s →</button></p>'+
     '</div>'+
-    groups+
-    '<div class="eyebrow" style="margin:30px 0 12px;color:#8a5d12">Lernkontrolle</div><div class="cards">'+
-      '<button class="card-topic" data-view="lernkontrolle" style="--accent:#B0781B"><span class="k">Lernkontrolle</span>'+
-      '<span class="d">Bereiche und Anzahl wählen – online mit Auswertung oder ausgedruckt mit Lösungsblatt.</span>'+
+    '<div class="eyebrow" style="margin:24px 0 12px;color:#8a5d12">Lernkontrolle</div><div class="cards">'+
+      '<button class="card-topic" data-view="lernkontrolle" data-lkscope="ALL" style="--accent:#B0781B"><span class="k">Lernkontrolle</span>'+
+      '<span class="d">Alle Bereiche zusammen – online oder als PDF.</span>'+
       '<span class="go" style="color:#8a5d12">Öffnen →</span></button></div>'+
-    '<div class="sheet" style="margin-top:30px">'+
-      '<p style="color:var(--ink-soft);margin:0;max-width:70ch"><b>Theorie</b> – kurze Rechenwege. '+
-      '<b>Üben</b> – Aufgaben mit sofortiger Kontrolle, dazu die Blitzrunde über 60 Sekunden. '+
-      '<b>Arbeitsblatt erstellen</b> – PDF mit separaten Lösungen.</p></div>'+
+    '<div class="eyebrow" style="margin:24px 0 12px;color:#005F6A">Bereiche</div><div class="cards">'+groupCards+'</div>'+
+  '</section>';
+}
+function buildGroupView(g){
+  const cards=TOPICS.filter(function(t){return t.group===g;}).map(function(t){
+    return '<button class="card-topic" data-view="'+t.key+'" style="--accent:'+topicAccent(t.key)+'">'+
+      '<span class="k">'+t.nav+'</span>'+
+      '<span class="d">'+t.lead+'</span>'+
+      '<span class="go" style="color:#005F6A">Öffnen →</span>'+
+    '</button>';
+  }).join('');
+  const keys=(LZBYGROUP[g]||[]).reduce(function(a,it){return a.concat(it.k);},[]);
+  return '<section class="view" id="view-'+grpView(g)+'">'+
+    '<div class="eyebrow">Mathematik <span class="topic-tag">«Kopfrechentraining»</span></div>'+
+    '<h2 class="title">'+g+'</h2>'+
+    '<p class="lead">Lernstand prüfen, Lernziele im Blick, üben.</p>'+
+    '<div class="cards" style="margin-bottom:26px">'+
+      '<button class="card-topic" data-view="lernkontrolle" data-lkscope="'+keys.join(',')+'" style="--accent:#B0781B"><span class="k">Lernstandsüberprüfung</span>'+
+      '<span class="d">Vor dem Üben: zeigt, was du schon kannst.</span>'+
+      '<span class="go" style="color:#8a5d12">Starten →</span></button>'+
+    '</div>'+
+    lzSheet(g)+
+    '<div class="eyebrow" style="margin:24px 0 12px;color:#005F6A">Üben</div><div class="cards">'+cards+'</div>'+
+    '<div class="eyebrow" style="margin:30px 0 12px;color:#8a5d12">Lernkontrolle</div><div class="cards">'+
+      '<button class="card-topic" data-view="lernkontrolle" data-lkscope="'+keys.join(',')+'" style="--accent:#B0781B"><span class="k">Lernkontrolle</span>'+
+      '<span class="d">Zum Schluss: prüft, ob du alles kannst.</span>'+
+      '<span class="go" style="color:#8a5d12">Starten →</span></button>'+
+    '</div>'+
+  '</section>';
+}
+function buildAnleitungView(){
+  return '<section class="view" id="view-anleitung">'+
+    '<div class="eyebrow">Mathematik · Lernlandschaft</div><h2 class="title">So funktioniert\'s</h2>'+
+    '<div class="sheet"><h3 style="margin-top:0">Bereiche</h3>'+
+    '<p>Jeder Bereich (Einmaleins, Zehnereinmaleins, Sikore) hat eine eigene Startseite mit '+
+    'Lernstandsüberprüfung, Lernzielen und den Übungen.</p>'+
+    '<h3>Lernziele</h3><p>Zeigen, was du am Ende können sollst. Hake ab, was sitzt, und übe gezielt den Rest.</p>'+
+    '<h3>Theorie, Üben, Arbeitsblatt erstellen</h3>'+
+    '<p><b>Theorie</b> erklärt den Rechenweg kurz. <b>Üben</b> gibt sofortiges Feedback. '+
+    '<b>Arbeitsblatt erstellen</b> macht ein PDF mit separaten Lösungen.</p>'+
+    '<h3>Schwierigkeitsstufen</h3><p><b>Grundanforderungen</b> – Basis. <b>Erweitert</b> – ganzer Zahlenraum. '+
+    '<b>Anspruchsvoll</b> – Niveau weiterführende Schulen.</p>'+
+    '<h3>Lernstandsüberprüfung &amp; Lernkontrolle</h3>'+
+    '<p><b>Lernstandsüberprüfung</b> machst du vor dem Üben, um zu sehen, was noch fehlt. '+
+    '<b>Lernkontrolle</b> machst du am Schluss, um zu prüfen, ob du alles kannst – online mit Auswertung '+
+    'oder ausgedruckt mit Lösungsblatt.</p></div>'+
   '</section>';
 }
 function buildTopicView(t){
@@ -2536,11 +2639,28 @@ function theorieFor(t){
 }
 function buildNav(){
   let html='<div class="nav-label">Start</div><button class="navbtn active" data-view="home"><span class="ico">▦</span> Übersicht</button>';
-  GROUPS.forEach(g=>{html+='<div class="nav-label">'+g+'</div>';
-    TOPICS.filter(t=>t.group===g).forEach(t=>{html+='<button class="navbtn" data-view="'+t.key+'"><span class="ico">›</span> '+t.nav+'</button>';});});
-  html+='<div class="nav-label">Lernkontrolle</div><button class="navbtn" data-view="lernkontrolle"><span class="ico">✎</span> Lernkontrolle</button>';
+  html+='<button class="navbtn" data-view="lernkontrolle" data-lkscope="ALL"><span class="ico">✎</span> Lernkontrolle</button>';
+  GROUPS.forEach(function(g){const gk=grpView(g);
+    html+='<div class="nav-row"><button class="nav-label nav-label-btn" data-view="'+gk+'">'+g+'</button>'+
+      '<button class="nav-chevron" data-toggle="'+gk+'" aria-label="Themenliste ein-/ausblenden">▸</button></div>';
+    html+='<div class="nav-sub" data-group="'+gk+'">'+
+      TOPICS.filter(function(t){return t.group===g;}).map(function(t){return '<button class="navbtn navbtn-sub" data-view="'+t.key+'"><span class="ico">›</span> '+t.nav+'</button>';}).join('')+
+    '</div>';});
+  html+='<div class="nav-label">Hilfe</div><button class="navbtn" data-view="anleitung"><span class="ico">?</span> So funktioniert\'s</button>';
   return html;
 }
+function goPractice(key){showView(key);const b=document.querySelector('#view-'+key+' .tab[data-panel="uebn"]');if(b)b.click();}
+let LK_SCOPE=null;
+function goToLK(scope){
+  LK_SCOPE=(!scope||scope==='ALL')?null:scope.split(',').filter(Boolean);
+  mountLK();
+  showView('lernkontrolle');
+}
+function setNavGroup(key,open){
+  $$('.nav-sub').forEach(function(el){el.classList.toggle('open',el.dataset.group===key&&open!==false);});
+  $$('.nav-chevron').forEach(function(b){b.classList.toggle('open',b.dataset.toggle===key&&open!==false);});
+}
+function toggleNavGroup(key){const sub=document.querySelector('.nav-sub[data-group="'+key+'"]');setNavGroup(key,!(sub&&sub.classList.contains('open')));}
 
 /* ===== Lernkontrolle (ersetzt den frueheren Kopfrechen-Test) ===== */
 function buildLKView(){
@@ -2552,16 +2672,18 @@ function buildLKView(){
 }
 function mountLK(){
   const host=document.getElementById('lk-host');if(!host||typeof LK==='undefined')return;
-  function practice(v){return function(){showView(v);const b=document.querySelector('#view-'+v+' .tab[data-panel="uebn"]');if(b)b.click();};}
-  LK.mount(host,{subject:'Kopfrechentraining',min:6,max:60,def:20,preselect:TOPICS.filter(t=>t.group===G1).map(t=>t.key),
-    groups:GROUPS.map(g=>({title:g,topics:TOPICS.filter(t=>t.group===g).map(t=>
-      ({key:t.key,nav:t.nav,gen:d=>EXAM_API[t.key](d),practice:practice(t.key)}))}))});
+  LK.mount(host,{subject:'Kopfrechentraining',min:6,max:60,def:20,preselect:LK_SCOPE,
+    groups:GROUPS.map(function(g){return {title:g,topics:TOPICS.filter(function(t){return t.group===g;}).map(function(t){
+      return {key:t.key,nav:t.nav,gen:function(d){return EXAM_API[t.key](d);},practice:function(){goPractice(t.key);}};})};})});
 }
 
 function init(){
   $('#nav').innerHTML=buildNav();
-  $('#main').innerHTML=buildHome()+TOPICS.map(buildTopicView).join('')+buildLKView();
+  $('#main').innerHTML=buildHome()+GROUPS.map(buildGroupView).join('')+TOPICS.map(buildTopicView).join('')+buildLKView()+buildAnleitungView();
   $$('[data-view]').forEach(b=>b.addEventListener('click',()=>showView(b.dataset.view)));
+  $$('[data-practice]').forEach(b=>b.addEventListener('click',()=>goPractice(b.dataset.practice)));
+  $$('[data-lkscope]').forEach(b=>b.addEventListener('click',()=>goToLK(b.dataset.lkscope)));
+  $$('.nav-chevron').forEach(b=>b.addEventListener('click',e=>{e.stopPropagation();toggleNavGroup(b.dataset.toggle);}));
   $('#menuToggle').addEventListener('click',()=>$('#sidebar').classList.toggle('open'));
   wireTabs();
   TOPICS.forEach(t=>{mountKopf($('#'+t.key+'-uebn'),t);mountGenerator($('#'+t.key+'-gen'),t);});
